@@ -9,8 +9,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="https://devopsengineer.xyz/assets/img/favicon.png" rel="icon">
-  <link href="https://devopsengineer.xyz/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -18,14 +18,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="https://devopsengineer.xyz/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://devopsengineer.xyz/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://devopsengineer.xyz/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="https://devopsengineer.xyz/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="https://devopsengineer.xyz/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="https://devopsengineer.xyz/assets/css/main.css" rel="stylesheet">
+  <link href="./assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -42,14 +42,20 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="https://devopsengineer.xyz/assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="./assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="https://devopsengineer.xyz/assets/img/logo.png" alt=""> -->
+      <!-- Embed Credly Badge -->
+      <div data-iframe-width="150" data-iframe-height="270" 
+           data-share-badge-id="6a85bac1-7487-47bc-9e16-5141fd04b1b8" 
+           data-share-badge-host="https://www.credly.com"></div>
+      <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+  
+      <!-- Logo and Name -->
       <h1 class="sitename">Vieer Dwivedi</h1>
-    </a>
+  </a>
+
 
     <div class="social-links text-center">
       <a href="tel:+91 7045308204" class="phone"><i class="bi bi-telephone"></i></a>
@@ -66,7 +72,7 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Github</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
         <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Cloud Skills</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
@@ -93,57 +99,69 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="https://devopsengineer.xyz/assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+      <img src="./assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Vieer Dwivedi</h2>
         <p>I'm <span class="typed" data-typed-items="DevOps Engineer, Cloud Engineer, AWS DevOps Engineer, Azure DevOps Engineer, Kubernetes Engineer">DevOps Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <br></br>
+        <br></br>
+        <button style="padding: 15px 50px; font-size: 16px; font-weight: 600; color: #fff; background-color: #4CAF50; border: none; border-radius: 50px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+              onmouseover="this.style.backgroundColor='#45a049'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.1)';"
+              onmouseout="this.style.backgroundColor='#4CAF50'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+              onmousedown="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0, 0, 0, 0.1)';"
+              onmouseup="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.1)';"
+              onclick="window.location.href='https://docs.google.com/document/d/1pHEBD194mP_L7pCMyZdOVbIuSPjvwErt/export?format=pdf';">
+          Download Resume
+      </button>
       </div>
 
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>I am a <strong>DevOps Engineer</strong>, <strong>Site Reliability Engineer (SRE)</strong>, and <strong>DevSecOps Engineer</strong> with <strong>6+ years of experience</strong>. I have strong expertise in <strong>AWS</strong>, <strong>GCP</strong>, and <strong>Azure</strong>, specializing in <strong>cloud infrastructure</strong>, <strong>automation</strong>, and <strong>CI/CD pipelines</strong>. With a focus on <strong>security</strong> and <strong>monitoring</strong>, I ensure <strong>scalable</strong>, <strong>reliable</strong>, and <strong>secure solutions</strong> for <strong>high-performance systems</strong>. I thrive in <strong>agile environments</strong>, driving <strong>efficiency</strong> while maintaining robust <strong>operational standards</strong>.</p>
+          
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="https://devopsengineer.xyz/assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+            <img src="./assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <h2>DevOps Engineer &amp; Site Reliability Engineer &amp; DevSecOps Engineer.</h2>
+  
             <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Vieer Dwivedi</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <a href="https://devopsengineer.xyz" target="_blank">devopsengineer.xyz</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <a href="tel:+917045308204"><span>+91 7045308204</span></a></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Navi Mumbai, India</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Availability:</strong> <span style="color: green; font-weight: bold;">Immediate</span></li>
+
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Ongoing Ph.D. in Cloud Engineering</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:vieerdwivedi@gmail.com"><span>vieerdwivedi@gmail.com</span></a></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span style="color: green; font-weight: bold;">Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Contract:</strong> <span style="color: green; font-weight: bold;">Available</span></li>                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Worldwide | USA Preferred</span></li>
                 </ul>
               </div>
             </div>
             <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+              I am open to work-from-home opportunities, available for projects worldwide. I possess strong proficiency in English and am eager to contribute to contract jobs and freelance projects. With my versatile skills, I can adapt to different roles and collaborate effectively with teams globally.
             </p>
           </div>
         </div>
@@ -162,35 +180,18 @@
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span></span></p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
               <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+              <p><strong>Projects</strong> <span>Number of Projects worked on</span></p>
             </div>
           </div><!-- End Stats Item -->
-
         </div>
 
       </div>
@@ -203,7 +204,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>DevOps Engineer &amp; Site Reliability Engineer &amp; DevSecOps Engineer.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -213,51 +214,156 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <span class="skill"><span>AWS</span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <span class="skill"><span>Azure</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <span class="skill"><span>Google Cloud</span> <i class="val">76%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Kubernetes</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Monitoring</span> <i class="val">89%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Okta</span> <i class="val">72%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">79%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Golang</span> <i class="val">56%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Java / Advanced Java ++</span> <i class="val">67%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Android</span> <i class="val">87%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>C++</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Bash</span> <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
-
           </div>
 
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+              <span class="skill"><span>EKS</span> <i class="val">98%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="998" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>AKS</span> <i class="val">89%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>GKS</span> <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
-
             <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+              <span class="skill"><span>Jira</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
+              <span class="skill"><span>Scrum</span> <i class="val">87%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
-
+            <div class="progress">
+              <span class="skill"><span>Terraform</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Terragrunt</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Docker / Docker Swarm</span> <i class="val">99%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Azure DevOps</span> <i class="val">89%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Helm</span> <i class="val">79%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Github</span> <i class="val">87%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Linux</span> <i class="val">78%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
           </div>
 
         </div>
@@ -272,10 +378,20 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>I am a <strong>DevOps Engineer</strong>, <strong>Site Reliability Engineer (SRE)</strong>, and <strong>DevSecOps Engineer</strong> with <strong>6+ years of experience</strong>. I have strong expertise in <strong>AWS</strong>, <strong>GCP</strong>, and <strong>Azure</strong>, specializing in <strong>cloud infrastructure</strong>, <strong>automation</strong>, and <strong>CI/CD pipelines</strong>. With a focus on <strong>security</strong> and <strong>monitoring</strong>, I ensure <strong>scalable</strong>, <strong>reliable</strong>, and <strong>secure solutions</strong> for <strong>high-performance systems</strong>. I thrive in <strong>agile environments</strong>, driving <strong>efficiency</strong> while maintaining robust <strong>operational standards</strong>.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
+        <button style="padding: 15px 50px; font-size: 16px; font-weight: 600; color: #fff; background-color: #4CAF50; border: none; border-radius: 50px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+                onmouseover="this.style.backgroundColor='#45a049'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.1)';"
+                onmouseout="this.style.backgroundColor='#4CAF50'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.1)';"
+                onmousedown="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 6px rgba(0, 0, 0, 0.1)';"
+                onmouseup="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.1)';"
+                onclick="window.location.href='https://docs.google.com/document/d/1pHEBD194mP_L7pCMyZdOVbIuSPjvwErt/export?format=pdf';">
+            Download Resume
+        </button>
+
+
 
         <div class="row">
 
@@ -283,28 +399,32 @@
             <h3 class="resume-title">Sumary</h3>
 
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <h4>Vieer Dwivedi</h4>
+              <p><em>I am a <strong>DevOps Engineer</strong>, <strong>Site Reliability Engineer (SRE)</strong>, and <strong>DevSecOps Engineer</strong> with <strong>6+ years of experience</strong>. I have strong expertise in <strong>AWS</strong>, <strong>GCP</strong>, and <strong>Azure</strong>, specializing in <strong>cloud infrastructure</strong>, <strong>automation</strong>, and <strong>CI/CD pipelines</strong>. With a focus on <strong>security</strong> and <strong>monitoring</strong>, I ensure <strong>scalable</strong>, <strong>reliable</strong>, and <strong>secure solutions</strong> for high-performance systems. I thrive in <strong>agile environments</strong>, driving efficiency while maintaining robust operational standards.</em></p>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li><span style="color: green; font-weight: bold;">Immediate Joinner</span></li>
+                <li>Kharghar, MH 410210, In | <span style="color: green;">Worldwide</span></li>
+                <li>+(91) 70453-08204</li>
+                <li>vieerdwivedi@gmail.com</li>
+                <li><span style="color: green;">Contract</span></li>
+                <li><span style="color: green;">Freelancer</span></li>
+                <li><span style="color: green;">Fulltime</span></li>
               </ul>
             </div><!-- Edn Resume Item -->
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+              <h4>Master of Computer Science</h4>
+              <h5>2023 - 2024</h5>
+              <p><em>Jayanagar 9th Block, Bengaluru, Karnataka, India - 560069</em></p>
+              <p>This program focuses on advanced concepts in computer science, including software development, algorithms, and data structures. During this period, I am honing my skills in problem-solving, critical thinking, and practical applications of computer science, preparing for future challenges in the tech industry.</p>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+              <h4>Bachelor of Science &amp; Computer Science</h4>
+              <h5>2019 - 2022</h5>
+              <p><em>Sanpada, Navi Mumbai, Maharashtra 400705</em></p>
+              <p>This program focuses on advanced concepts in computer science, including software development, algorithms, and data structures. During this period, I am honing my skills in problem-solving, critical thinking, and practical applications of computer science, preparing for future challenges in the tech industry.</p>
             </div><!-- Edn Resume Item -->
 
           </div>
@@ -312,29 +432,81 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4><a href="https://vtechvibrant.in">VtechVibrant</a></h4>
+              <h5>2023 - Present</h5>
+              <p><em>Taloja, Navi-Mumbai, MH </em></p>
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
+                <li><strong>Directed cost-saving initiatives</strong> by analyzing and identifying 11+ underutilized resources across <strong>AWS</strong> (ECR, Lambda, EC2, RDS, S3) and <strong>Azure</strong> (Azure Functions, VNet, Azure SQL Database), achieving a quarterly spending reduction of <strong>$2,400</strong>.</li>
+                <li><strong>Orchestrated large-scale deployments</strong> across 300+ private cloud instances and 60+ data centers by leveraging <strong>AWS EC2</strong>, <strong>EKS</strong>, and <strong>Azure AKS</strong> environments, utilizing <strong>Ubuntu Server</strong>, NFS, and <strong>Ansible</strong> for configuration management and automation.</li>
+                <li><strong>Enhanced IT support team efficiency</strong> by resolving hardware failures, installing new devices, and utilizing <strong>AWS CloudWatch</strong> and <strong>Azure Monitor</strong> to proactively monitor system health, addressing 48+ network-related issues.</li>
+                <li><strong>Boosted project completion rates</strong> from 28% to 85% by collaborating with Colo vendors, client systems, and network engineers, and integrating <strong>AWS VPC</strong>, <strong>Route 53</strong>, <strong>API Gateway</strong>, and <strong>Azure VNet</strong>.</li>
+                <li><strong>Developed Kubernetes jobs in Golang/Bash</strong> to resolve known issues, integrating metrics and logging functionality and streamlining with distroless Docker images.</li>
+                <li><strong>Innovated troubleshooting capabilities</strong> by implementing modern <strong>AWS tooling</strong> into EC2 images and <strong>Azure Automation</strong>, enabling 10+ developers to perform role-specific troubleshooting and reducing <strong>Mean Time to Respond</strong> by 48%.</li>
+                <li><strong>Improved development workflows</strong> by formulating common branching strategies and automating build/integration checks using <strong>AWS CodePipeline</strong>, <strong>Azure Pipelines</strong>, and <strong>Jenkins</strong>, boosting team velocity by 28%.</li>
+                <li><strong>Automated routine tasks</strong> on Linux-based EC2 instances with <strong>Bash scripting</strong>, addressing server provisioning, patch management, and configuration updates, reducing manual effort by 40%.</li>
+                <li><strong>Accelerated application deployment cycles</strong> by containerizing microservices using <strong>Docker</strong> and managing workloads with <strong>Kubernetes</strong> (<strong>EKS</strong>, <strong>AKS</strong>), achieving a 35% improvement in release frequency and reliability.</li>
+                <li><strong>Executed automated build and deployment processes</strong> with <strong>Jenkins</strong>, <strong>AWS CodeDeploy</strong>, and <strong>Azure DevOps</strong>, reducing manual work by 85% and surpassing previous deployment efficiency targets.</li>
+                <li><strong>Spearheaded the transition from Azure to AWS</strong>, leading a seamless migration utilizing <strong>Azure VMs</strong>, <strong>Azure SQL Database</strong>, and <strong>AWS ECS</strong>, saving the company <strong>$2M per year</strong> and increasing operational efficiency by 10%.</li>
+                <li><strong>Proactively managed security</strong> by addressing 55+ accounts across <strong>AWS IAM</strong>, <strong>Jenkins</strong>, and <strong>Azure Active Directory</strong>, ensuring secure resource access and enhancing overall system security.</li>
+                <li><strong>Facilitated Kubernetes adoption</strong> by introducing 17 tools across <strong>AWS EKS</strong> and <strong>Azure AKS</strong>, empowering 285 developers to deploy applications without prior Kubernetes knowledge.</li>
+                <li><strong>Designed an internal deployment tracking tool</strong>, increasing team productivity by 100%, while utilizing <strong>AWS CloudTrail</strong> and <strong>Azure Activity Log</strong> to track deployments and enhance transparency.</li>
+                <li><strong>Reduced release time</strong> from 3 months to 7 days by fostering collaboration between Dev and Ops teams and leveraging <strong>AWS Elastic Beanstalk</strong>, <strong>Azure App Services</strong>, and <strong>Azure DevOps</strong> for faster deployments.</li>
+                <li><strong>Provided production support</strong> for 45 applications in Linux and Windows environments by utilizing <strong>AWS CloudWatch</strong>, <strong>Azure Monitor</strong>, and <strong>Azure SQL Database</strong> to ensure high availability and performance.</li>
+                <li><strong>Orchestrated tools</strong> like <strong>Devlake</strong>, Scrum Master, grooming calls, and Agile methods using <strong>Jira</strong>, <strong>Jira automation</strong>, <strong>Smartsheet</strong>, and <strong>Monday.com</strong>.</li>
+            </ul>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4><a href="https://www.simsoltech.com/">SimSol Technologies and Services Private Limited</a></h4>
+              <h5>2022 - 2023</h5>
+              <p><em>Sonapur, Bhandup West, Mumbai, Maharashtra 400078</em></p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
+                <li><strong>Collaborated</strong> with 13+ <strong>Dev Leads</strong> to orchestrate <strong>CI/CD framework efficiency</strong>, successfully integrating <strong>Azure services</strong> such as <strong>Azure DevOps</strong>, <strong>Azure Pipelines</strong>, <strong>Azure Monitor</strong>, and <strong>Azure Automation</strong>, streamlining and scaling the deployment pipeline.</li>
+                <li><strong>Engineered and implemented scalable microservices</strong> in <strong>Golang</strong> for <strong>Kubernetes</strong>, incorporating robust logging, metrics collection, and optimizing deployment with <strong>distroless Docker images</strong>, ensuring performance and security.</li>
+                <li><strong>Accelerated bug-fixing processes</strong>, reducing resolution time from 10 days to 2 hours by creating automated nightly builds in <strong>Azure DevOps</strong>, leveraging <strong>Azure Pipelines</strong> for CI and <strong>Azure Monitor</strong> for early issue detection and resolution.</li>
+                <li><strong>Pioneered Azure DevOps automation</strong> to streamline the bug-fixing pipeline, cutting resolution time by 80%, and utilizing <strong>Azure Monitor</strong> for early issue detection.</li>
+                <li><strong>Optimized deployment reliability</strong> on <strong>Azure Kubernetes Service (AKS)</strong> by integrating <strong>Azure Monitoring</strong> and <strong>Azure Automation</strong>, reducing incident response time.</li>
+                <li><strong>Spearheaded the setup and management</strong> of the complete <strong>AKS</strong> and <strong>Azure infrastructure</strong> with <strong>Terraform</strong>, enabling automated provisioning, scaling, and ensuring consistent and repeatable deployments.</li>
+                <li><strong>Automated infrastructure provisioning</strong> using <strong>Terraform</strong> and <strong>Ansible</strong>, ensuring scalability, consistency, and faster deployments across <strong>Azure</strong> and <strong>AWS</strong> environments.</li>
+                <li><strong>Developed Helm charts</strong> to simplify Kubernetes deployments, reducing manual configuration efforts and ensuring standardized application deployment.</li>
+                <li><strong>Implemented RBAC</strong> and <strong>IAM policies</strong> across <strong>Azure AD</strong>, <strong>AWS IAM</strong>, and <strong>Kubernetes</strong>, enhancing security compliance and minimizing unauthorized access risks.</li>
+                <li><strong>Optimized cost management strategies</strong> by leveraging spot instances, rightsizing VMs, and implementing auto-scaling policies, achieving a <strong>30% reduction in cloud costs</strong>.</li>
+                <li><strong>Enhanced observability and monitoring</strong> by integrating <strong>Prometheus</strong>, <strong>Grafana</strong>, and <strong>ELK stack</strong> with <strong>Azure Monitor</strong> and <strong>AWS CloudWatch</strong>, improving incident response time.</li>
+                <li><strong>Led security best practices adoption</strong> by implementing <strong>Snyk</strong>, <strong>SonarQube</strong>, and security scanning tools, reducing vulnerabilities in <strong>CI/CD pipelines</strong>.</li>
+                <li><strong>Architected high-availability and disaster recovery solutions</strong>, utilizing multi-region deployments, backup automation, and failover strategies to ensure business continuity.</li>
+                <li><strong>Optimized container image sizes</strong> by implementing <strong>Docker multi-stage builds</strong>, reducing image size by 60%, improving deployment speed, and minimizing attack surface.</li>
+                <li><strong>Integrated Docker security scanning tools</strong> like <strong>Trivy</strong> and <strong>Snyk</strong>, proactively identifying and fixing vulnerabilities in containerized applications before deployment.</li>
+                <li><strong>Automated container image hardening</strong> by implementing <strong>distroless base images</strong> and eliminating unnecessary dependencies, improving security and compliance.</li>
+                <li><strong>Enhanced CI/CD security</strong> by enforcing image scanning policies in <strong>AWS ECR</strong> and <strong>Azure Container Registry (ACR)</strong>, ensuring only compliant images are deployed.</li>
+                <li><strong>Developed and enforced best practices</strong> for <strong>Dockerfile linting</strong> and optimization, reducing build failures and improving container performance.</li>
+            </ul>            
             </div><!-- Edn Resume Item -->
 
+            <div class="resume-item">
+              <h4><a href="https://vtechvibrant.in">VtechVibrant</a></h4>
+              <h5>2023 - Present</h5>
+              <p><em>Taloja, Navi-Mumbai, MH </em></p>
+              <ul>
+                <li><strong>Optimized and streamlined application deployments</strong> by implementing <strong>Docker containerization</strong> and automating <strong>Kubernetes deployments</strong> using <strong>Helm</strong>, ensuring scalability, high availability, and operational efficiency.</li>
+                <li><strong>Designed, built, and automated CI/CD pipelines</strong> using <strong>GitLab CI</strong>, <strong>CircleCI</strong>, and <strong>Jenkins</strong>, integrating with <strong>AWS services</strong> (<strong>ECR</strong>, <strong>Lambda</strong>, <strong>ECS</strong>, <strong>VPC</strong>, <strong>SQS</strong>, <strong>CodePipeline</strong>) to facilitate continuous integration, deployment, and infrastructure automation.</li>
+                <li><strong>Implemented Infrastructure as Code (IaC)</strong> using <strong>Terraform</strong> and <strong>CloudFormation</strong>, enabling automated provisioning, efficient resource utilization, and environment consistency across multi-cloud architectures (<strong>AWS</strong> and <strong>Azure</strong>).</li>
+                <li><strong>Enhanced system observability and performance monitoring</strong> by integrating <strong>Grafana</strong>, <strong>FluentD</strong>, <strong>Filebeat</strong>, <strong>Prometheus</strong>, <strong>Loki</strong>, <strong>Promtail</strong>, <strong>Elasticsearch</strong>, <strong>Datadog</strong>, <strong>Dynatrace</strong>, and <strong>AWS CloudWatch</strong>, enabling real-time insights, proactive troubleshooting, and incident response.</li>
+                <li><strong>Optimized Docker images</strong> using <strong>multi-stage builds</strong>, reducing container size by 60%, improving deployment efficiency, and minimizing security vulnerabilities.</li>
+                <li><strong>Integrated security best practices</strong> by implementing <strong>container scanning tools</strong> (<strong>Trivy</strong>, <strong>Snyk</strong>, and <strong>Clair</strong>), ensuring compliance with <strong>DevSecOps principles</strong> and mitigating risks in production environments.</li>
+                <li><strong>Reduced deployment time by 85%</strong> through automated release management, leveraging <strong>Kubernetes (EKS, AKS)</strong>, <strong>Helm</strong>, and <strong>ArgoCD</strong> for zero-downtime rollouts and canary deployments.</li>
+                <li><strong>Developed self-healing and auto-scaling cloud architectures</strong>, utilizing <strong>Kubernetes Horizontal Pod Autoscaler (HPA)</strong>, <strong>AWS Auto Scaling Groups (ASG)</strong>, and <strong>Azure Virtual Machine Scale Sets (VMSS)</strong> to ensure resilient and cost-optimized infrastructure.</li>
+                <li><strong>Implemented Blue-Green and Canary deployments</strong> in <strong>Kubernetes</strong> using <strong>ArgoCD</strong> and <strong>Helm</strong>, reducing downtime and risk during production rollouts.</li>
+                <li><strong>Developed and enforced CI/CD security policies</strong> by integrating <strong>HashiCorp Vault</strong>, <strong>AWS Secrets Manager</strong>, and <strong>Azure Key Vault</strong>, ensuring secure credential management across deployments.</li>
+                <li><strong>Optimized API performance and reliability</strong> by implementing <strong>AWS API Gateway</strong>, <strong>Azure API Management</strong>, and <strong>CloudFront</strong>, reducing latency by 40% and improving user experience.</li>
+                <li><strong>Automated compliance enforcement</strong> using <strong>AWS Config</strong>, <strong>Azure Policy</strong>, and <strong>Open Policy Agent (OPA)</strong>, ensuring continuous adherence to security and governance best practices.</li>
+                <li><strong>Designed scalable logging and monitoring solutions</strong> using <strong>OpenTelemetry</strong>, <strong>ELK Stack</strong>, <strong>Loki</strong>, and <strong>CloudWatch Logs Insights</strong>, enhancing incident response and forensic analysis.</li>
+                <li><strong>Led the migration of on-prem applications to AWS and Azure</strong>, leveraging <strong>Lift-and-Shift</strong>, <strong>Re-platforming</strong>, and <strong>Re-architecting strategies</strong>, cutting infrastructure costs by 30%.</li>
+                <li><strong>Deployed and secured microservices</strong> using service mesh technologies like <strong>Istio</strong> and <strong>Linkerd</strong>, improving observability, security, and traffic control in multi-cloud environments.</li>
+                <li><strong>Automated vulnerability remediation</strong> by integrating <strong>AWS Inspector</strong>, <strong>Azure Security Center</strong>, and <strong>Snyk</strong>, reducing security risks by 75%.</li>
+                <li><strong>Orchestrated disaster recovery strategies</strong> by implementing <strong>AWS Backup</strong>, <strong>Azure Site Recovery</strong>, and <strong>cross-region replication</strong>, ensuring 99.99% availability.</li>
+                <li><strong>Configured and optimized Nginx and HAProxy</strong> for high-performance load balancing, enhancing application response time and resilience.</li>
+            </ul>            
+            </div><!-- Edn Resume Item -->
           </div>
 
         </div>
@@ -348,7 +520,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2>Github</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div><!-- End Section Title -->
 
@@ -368,11 +540,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>App 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -380,11 +552,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Product 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -392,11 +564,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Branding 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -404,11 +576,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Books 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -416,11 +588,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>App 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -428,11 +600,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Product 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -440,11 +612,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Branding 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -452,11 +624,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Books 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -464,11 +636,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>App 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -476,11 +648,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Product 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -488,11 +660,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Branding 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -500,11 +672,11 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <img src="https://devopsengineer.xyz/assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <img src="./assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Books 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="https://devopsengineer.xyz/assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="./assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -585,139 +757,6 @@
       </div>
 
     </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <script>
-            async function loadAWSList() {
-                try {
-                    const response = await fetch('aws.txt'); // Fetch the file
-                    const text = await response.text(); // Read file content
-                    const services = text.split('\n').map(line => line.trim()).filter(line => line); // Process lines
-        
-                    const listElement = document.getElementById('aws-list');
-                    services.forEach(service => {
-                        const li = document.createElement('li');
-                        li.innerHTML = `<a href="#">${service}</a>`; // Create <li> with <a>
-                        listElement.appendChild(li);
-                    });
-                } catch (error) {
-                    console.error('Error loading aws.txt:', error);
-                }
-            }
-        
-            loadAWSList(); // Call the function
-        </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://devopsengineer.xyz/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://devopsengineer.xyz/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://devopsengineer.xyz/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://devopsengineer.xyz/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://devopsengineer.xyz/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -812,14 +851,10 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+        <p><span>Vieer Dwivedi</span> <strong class="px-1 sitename"> |  +91 7045308204</strong> <span> | vieerdwivedi@gmail.com</span></p>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+         <a href="https://www.linkedin.com/in/vieerdwivedi/" target="_blank" >Linkedin</a>
       </div>
     </div>
 
@@ -832,19 +867,19 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="https://devopsengineer.xyz/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://devopsengineer.xyz/assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://devopsengineer.xyz/assets/vendor/aos/aos.js"></script>
-  <script src="https://devopsengineer.xyz/assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="https://devopsengineer.xyz/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="https://devopsengineer.xyz/assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="https://devopsengineer.xyz/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="https://devopsengineer.xyz/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="https://devopsengineer.xyz/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="https://devopsengineer.xyz/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/php-email-form/validate.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="https://devopsengineer.xyz/assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 
 </body>
 
