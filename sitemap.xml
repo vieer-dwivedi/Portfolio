@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://devopsengineer.xyz/</loc>
-    <lastmod>2022-06-04</lastmod>
-  </url>
+   <url>
+      <loc>https://vtechvibrant.in/</loc>
+   </url>
+   <url>
+      <loc>https://devopsengineer.xyz/</loc>
+   </url>
+   <url>
+      <loc>https://devopsengineer.xyz/index.html</loc>
+   </url>
+   <url>
+      <loc>https://devopsengineer.xyz/about.html</loc>
+   </url>
+   <url>
+      <loc>https://devopsengineer.xyz/portfolio.html</loc>
+   </url>
+   <url>
+      <loc>https://devopsengineer.xyz/resume.html</loc>
+   </url>
 </urlset>
