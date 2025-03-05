@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0;url=index.html#about">
-    <script>
-        window.location.href = "index.html#about";
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="canonical" href="https://devopsengineer.xyz/about.html">
 </head>
 <body>
-    <p>If you are not redirected, <a href="index.html#about">click here</a>.</p>
+    <h1>About Me</h1>
+    <p>Welcome to the About page.</p>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "index.html#about";
+        }, 1000); // Redirect after 1 second
+    </script>
 </body>
 </html>
