@@ -1,0 +1,105 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #e6edf3;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #007cf0, #00dfd8);
+    padding: 50px 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Profile Section */
+.profile {
+    margin: 40px auto;
+    width: 50%;
+    padding: 30px;
+    border-radius: 15px;
+    background: #161b22;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.profile img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 6px solid #00dfd8;
+    box-shadow: 0 0 12px rgba(0, 223, 216, 0.7);
+}
+
+/* Sections */
+section {
+    margin: 30px auto;
+    width: 65%;
+    padding: 25px;
+    background: #161b22;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
+}
+
+section h2 {
+    color: #00dfd8;
+    font-weight: 600;
+}
+
+/* Skills Section */
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 15px;
+    background: #007cf0;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact a {
+    color: #00dfd8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #161b22;
+    font-size: 16px;
+    border-radius: 15px 15px 0 0;
+}
