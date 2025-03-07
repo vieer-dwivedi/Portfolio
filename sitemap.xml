@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://devopsengineer.xyz/</loc>
-      <lastmod>2025-03-05</lastmod>
+      <lastmod>2025-03-07</lastmod>
+      <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://devopsengineer.xyz/about.html</loc>
-      <lastmod>2025-03-05</lastmod>
-      <priority>0.8</priority>
+      <loc>https://devopsengineer.xyz/about</loc>
+      <lastmod>2025-03-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
    </url>
    <url>
-      <loc>https://devopsengineer.xyz/portfolio.html</loc>
-      <lastmod>2025-03-05</lastmod>
-      <priority>0.8</priority>
+      <loc>https://devopsengineer.xyz/portfolio</loc>
+      <lastmod>2025-03-07</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
    </url>
    <url>
-      <loc>https://devopsengineer.xyz/resume.html</loc>
-      <lastmod>2025-03-05</lastmod>
+      <loc>https://devopsengineer.xyz/resume</loc>
+      <lastmod>2025-03-07</lastmod>
+      <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 </urlset>
