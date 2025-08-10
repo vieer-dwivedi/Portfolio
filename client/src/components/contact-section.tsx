@@ -5,8 +5,8 @@ export default function ContactSection() {
   const contactMethods = [
     {
       icon: "fas fa-envelope",
-      color: "text-blue-500",
-      bgColor: "from-blue-500/20 to-blue-400/10",
+      color: "text-blue-400",
+      bgColor: "from-blue-900/30 to-blue-800/10",
       borderColor: "border-blue-400/30",
       title: "Email",
       content: "vieerdwivedi@gmail.com",
@@ -15,8 +15,8 @@ export default function ContactSection() {
     },
     {
       icon: "fas fa-phone-alt",
-      color: "text-green-500",
-      bgColor: "from-green-500/20 to-green-400/10",
+      color: "text-green-400",
+      bgColor: "from-green-900/30 to-green-800/10",
       borderColor: "border-green-400/30",
       title: "Phone",
       content: "+91 7045308204",
@@ -25,9 +25,9 @@ export default function ContactSection() {
     },
     {
       icon: "fab fa-linkedin",
-      color: "text-blue-600",
-      bgColor: "from-blue-600/20 to-blue-500/10",
-      borderColor: "border-blue-500/30",
+      color: "text-cyan-400",
+      bgColor: "from-cyan-900/30 to-blue-800/10",
+      borderColor: "border-cyan-400/30",
       title: "LinkedIn",
       content: "Professional Network",
       href: "https://linkedin.com/in/vieer-dwivedi",
@@ -142,7 +142,7 @@ export default function ContactSection() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <Card className={`bg-gradient-to-br ${method.bgColor} border-2 ${method.borderColor} backdrop-blur-sm transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 group-hover:scale-105 h-full`}>
+                <Card className={`bg-gradient-to-br ${method.bgColor} border-2 ${method.borderColor} backdrop-blur-sm transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 group-hover:scale-105 h-full bg-white/5`}>
                   <CardContent className="p-8 text-center h-full flex flex-col">
                     <motion.div
                       className="mb-6"
