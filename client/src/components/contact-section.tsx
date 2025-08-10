@@ -6,7 +6,6 @@ export default function ContactSection() {
     {
       icon: "fas fa-envelope",
       color: "text-blue-400",
-      bgColor: "from-blue-900/30 to-blue-800/10",
       borderColor: "border-blue-400/30",
       title: "Email",
       content: "vieerdwivedi@gmail.com",
@@ -16,7 +15,6 @@ export default function ContactSection() {
     {
       icon: "fas fa-phone-alt",
       color: "text-green-400",
-      bgColor: "from-green-900/30 to-green-800/10",
       borderColor: "border-green-400/30",
       title: "Phone",
       content: "+91 7045308204",
@@ -26,7 +24,6 @@ export default function ContactSection() {
     {
       icon: "fab fa-linkedin",
       color: "text-cyan-400",
-      bgColor: "from-cyan-900/30 to-blue-800/10",
       borderColor: "border-cyan-400/30",
       title: "LinkedIn",
       content: "Professional Network",
@@ -142,7 +139,7 @@ export default function ContactSection() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <Card className={`bg-gradient-to-br ${method.bgColor} border-2 ${method.borderColor} backdrop-blur-sm transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 group-hover:scale-105 h-full bg-white/5`}>
+                <Card className={`bg-white/5 border-2 ${method.borderColor} backdrop-blur-sm transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 group-hover:scale-105 h-full hover:bg-white/10`}>
                   <CardContent className="p-8 text-center h-full flex flex-col">
                     <motion.div
                       className="mb-6"
