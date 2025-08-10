@@ -33,12 +33,34 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <motion.div 
-            className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
-            whileHover={{ scale: 1.05 }}
-          >
-            Vieer <span className="text-orange-500">Dwivedi</span>
-          </motion.div>
+          <div className="flex items-center space-x-8">
+            <motion.div 
+              className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+              whileHover={{ scale: 1.05 }}
+            >
+              Vieer <span className="text-orange-500">Dwivedi</span>
+            </motion.div>
+            
+            {/* Contact Info in Header */}
+            <div className="hidden lg:flex items-center space-x-6 text-sm">
+              <motion.a 
+                href="mailto:vieerdwivedi@gmail.com"
+                className="flex items-center text-slate-600 hover:text-blue-600 transition-colors"
+                whileHover={{ scale: 1.05 }}
+              >
+                <i className="fas fa-envelope mr-2"></i>
+                vieerdwivedi@gmail.com
+              </motion.a>
+              <motion.a 
+                href="tel:+917045308204"
+                className="flex items-center text-slate-600 hover:text-blue-600 transition-colors"
+                whileHover={{ scale: 1.05 }}
+              >
+                <i className="fas fa-phone mr-2"></i>
+                +91 7045308204
+              </motion.a>
+            </div>
+          </div>
           
           <div className="hidden md:flex space-x-8">
             {[

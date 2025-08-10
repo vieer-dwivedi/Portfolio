@@ -66,6 +66,36 @@ export default function HeroSection() {
             <OrbitalIcons />
           </motion.div>
 
+          {/* Contact Info Banner */}
+          <motion.div 
+            className="mb-8 text-white"
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-6 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+              <motion.a 
+                href="mailto:vieerdwivedi@gmail.com"
+                className="flex items-center text-white hover:text-blue-300 transition-colors text-lg font-semibold"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <i className="fas fa-envelope mr-3 text-blue-400"></i>
+                vieerdwivedi@gmail.com
+              </motion.a>
+              <div className="hidden sm:block w-px h-6 bg-white/30"></div>
+              <motion.a 
+                href="tel:+917045308204"
+                className="flex items-center text-white hover:text-green-300 transition-colors text-lg font-semibold"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <i className="fas fa-phone mr-3 text-green-400"></i>
+                +91 7045308204
+              </motion.a>
+            </div>
+          </motion.div>
+
           {/* Hero Content */}
           <motion.div 
             className="text-white space-y-8"
