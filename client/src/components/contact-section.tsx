@@ -262,7 +262,6 @@ export default function ContactSection() {
             viewport={{ once: true }}
           >
             <Card className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 border-0 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-purple-600/90"></div>
               <CardContent className="relative p-12">
                 <motion.h3 
                   className="text-4xl font-bold mb-4"

@@ -13,6 +13,15 @@ Preferred communication style: Simple, everyday language.
 - Multiple landing pages for different search intents
 - Site domain: devopsengineer.xyz
 
+## Accessibility Features
+- WCAG-compliant color contrast toggle with 4 modes (Normal, High, Enhanced, Inverted)
+- Color blind friendly mode with enhanced color differentiation
+- Reduced motion toggle for users sensitive to animations
+- Screen reader support with ARIA live announcements
+- Keyboard navigation accessibility
+- Persistent settings saved to localStorage
+- System preference detection for contrast and motion
+
 # System Architecture
 
 ## Frontend Architecture
@@ -44,6 +53,9 @@ Preferred communication style: Simple, everyday language.
 - **Portfolio Sections**: Modular components for hero, about, skills, experience, certifications, projects, and contact
 - **Responsive Design**: Mobile-first approach with adaptive layouts
 - **Accessibility**: ARIA-compliant components using Radix UI primitives
+- **Accessibility Toggle**: Full-featured contrast control with dropdown menu interface
+- **Lazy Loading**: React.lazy() implementation for all pages with loading states
+- **Performance**: Code splitting, image lazy loading, and CloudFront optimization
 
 ## Styling Strategy
 - **CSS Framework**: Tailwind CSS with custom configuration

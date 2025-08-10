@@ -1,0 +1,722 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vieer Dwivedi - DevOps Engineer | Kubernetes Expert | DevSecOps Specialist</title>
+    <meta name="description" content="Vieer Dwivedi - Senior DevOps Engineer with 5+ years experience in AWS, Azure, GCP, Kubernetes, CI/CD, and DevSecOps. Available for hire.">
+    <meta name="keywords" content="DevOps Engineer, Kubernetes, AWS, Azure, GCP, CI/CD, DevSecOps, SRE, Cloud Engineer, Terraform, Docker">
+    <meta name="author" content="Vieer Dwivedi">
+    <meta property="og:title" content="Vieer Dwivedi - DevOps Engineer | Kubernetes Expert">
+    <meta property="og:description" content="Senior DevOps Engineer specializing in multi-cloud infrastructure, Kubernetes orchestration, and DevSecOps practices.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://vieerdwivedi.dev">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    'aws-orange': '#ff9900',
+                    'azure-blue': '#0078d4',
+                    'gcp-green': '#34a853',
+                    'cloud-blue': '#0ea5e9',
+                },
+                animation: {
+                    'float-slow': 'float 6s ease-in-out infinite',
+                    'float-medium': 'float 4s ease-in-out infinite',
+                    'float-fast': 'float 3s ease-in-out infinite',
+                    'orbit-slow': 'orbit 20s linear infinite',
+                    'orbit-medium': 'orbit 15s linear infinite',
+                    'orbit-fast': 'orbit 10s linear infinite',
+                    'pulse-glow': 'pulseGlow 2s ease-in-out infinite alternate',
+                    'fade-in-up': 'fadeInUp 0.8s ease-out',
+                }
+            }
+        }
+    };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        @keyframes orbit {
+            0% { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+            100% { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+        }
+        
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 20px rgba(14, 165, 233, 0.4); }
+            100% { box-shadow: 0 0 40px rgba(14, 165, 233, 0.8); }
+        }
+        
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(60px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .floating-icon {
+            animation: float 4s ease-in-out infinite;
+            animation-delay: var(--delay);
+        }
+        
+        .orbital-icon {
+            position: absolute;
+            animation: orbit linear infinite;
+            animation-duration: var(--duration);
+            animation-delay: var(--delay);
+        }
+        
+        .tech-icon {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-inter bg-slate-50 overflow-x-hidden">
+    
+    <!-- @COMPONENT: Navigation -->
+    <!-- Fixed navigation with smooth scroll effects -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-slate-800">
+                    Vieer <span class="text-cloud-blue">Dwivedi</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-cloud-blue transition-colors">About</a>
+                    <a href="#experience" class="text-slate-600 hover:text-cloud-blue transition-colors">Experience</a>
+                    <a href="#skills" class="text-slate-600 hover:text-cloud-blue transition-colors">Skills</a>
+                    <a href="#projects" class="text-slate-600 hover:text-cloud-blue transition-colors">Projects</a>
+                    <a href="#contact" class="text-slate-600 hover:text-cloud-blue transition-colors">Contact</a>
+                </div>
+                <a href="https://docs.google.com/document/d/1pHEBD194mP_L7pCMyZdOVbIuSPjvwErt/export?format=pdf" 
+                   class="bg-cloud-blue text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <!-- Hero section with animated floating icons around profile photo -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- Floating background elements -->
+        <div class="absolute inset-0">
+            <!-- @MAP: Floating background icons with different animations -->
+            <div class="floating-icon absolute top-20 left-10 text-aws-orange text-6xl opacity-20" style="--delay: 0s;">
+                <i class="fab fa-aws"></i>
+            </div>
+            <div class="floating-icon absolute top-32 right-20 text-azure-blue text-5xl opacity-20" style="--delay: 1s;">
+                <i class="fab fa-microsoft"></i>
+            </div>
+            <div class="floating-icon absolute bottom-40 left-20 text-gcp-green text-5xl opacity-20" style="--delay: 2s;">
+                <i class="fab fa-google"></i>
+            </div>
+            <div class="floating-icon absolute bottom-20 right-10 text-cloud-blue text-6xl opacity-20" style="--delay: 1.5s;">
+                <i class="fab fa-docker"></i>
+            </div>
+            <!-- @END_MAP -->
+        </div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- Profile Image with Orbital Icons -->
+                <div class="relative inline-block mb-8">
+                    <!-- Central profile image -->
+                    <!-- Professional headshot of a DevOps engineer in business attire -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
+                         alt="Vieer Dwivedi - DevOps Engineer" 
+                         class="w-48 h-48 rounded-full mx-auto border-4 border-white shadow-2xl animate-pulse-glow relative z-20">
+                    
+                    <!-- Orbital floating icons around profile -->
+                    <div class="absolute inset-0 w-48 h-48 mx-auto">
+                        <!-- AWS Icon -->
+                        <div class="orbital-icon tech-icon w-12 h-12 rounded-full flex items-center justify-center text-aws-orange" 
+                             style="--duration: 20s; --delay: 0s;">
+                            <i class="fab fa-aws text-xl"></i>
+                        </div>
+                        
+                        <!-- Azure Icon -->
+                        <div class="orbital-icon tech-icon w-12 h-12 rounded-full flex items-center justify-center text-azure-blue" 
+                             style="--duration: 15s; --delay: -5s;">
+                            <i class="fab fa-microsoft text-xl"></i>
+                        </div>
+                        
+                        <!-- GCP Icon -->
+                        <div class="orbital-icon tech-icon w-12 h-12 rounded-full flex items-center justify-center text-gcp-green" 
+                             style="--duration: 18s; --delay: -10s;">
+                            <i class="fab fa-google text-xl"></i>
+                        </div>
+                        
+                        <!-- Kubernetes Icon -->
+                        <div class="orbital-icon tech-icon w-12 h-12 rounded-full flex items-center justify-center text-cloud-blue" 
+                             style="--duration: 22s; --delay: -15s;">
+                            <i class="fas fa-dharmachakra text-xl"></i>
+                        </div>
+                        
+                        <!-- Docker Icon -->
+                        <div class="orbital-icon tech-icon w-12 h-12 rounded-full flex items-center justify-center text-blue-500" 
+                             style="--duration: 16s; --delay: -8s;">
+                            <i class="fab fa-docker text-xl"></i>
+                        </div>
+                        
+                        <!-- Python Icon -->
+                        <div class="orbital-icon tech-icon w-12 h-12 rounded-full flex items-center justify-center text-yellow-500" 
+                             style="--duration: 19s; --delay: -12s;">
+                            <i class="fab fa-python text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Content -->
+                <div class="text-white space-y-6 animate-fade-in-up">
+                    <div class="inline-flex items-center bg-green-500/20 text-green-300 px-4 py-2 rounded-full border border-green-500/30 mb-4">
+                        <div class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+                        Available for Hire
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                        <span class="block">Vieer Dwivedi</span>
+                        <span class="block text-3xl md:text-4xl text-cloud-blue font-medium mt-2">
+                            DevOps Engineer | Kubernetes Expert
+                        </span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                        5+ years crafting <span class="text-aws-orange font-semibold">multi-cloud infrastructure</span>, 
+                        orchestrating <span class="text-cloud-blue font-semibold">Kubernetes</span> at scale, and 
+                        implementing <span class="text-gcp-green font-semibold">DevSecOps</span> practices
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+                        <a href="#contact" 
+                           class="bg-cloud-blue hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+                            <i class="fas fa-envelope mr-2"></i>Get In Touch
+                        </a>
+                        <a href="https://docs.google.com/document/d/1pHEBD194mP_L7pCMyZdOVbIuSPjvwErt/export?format=pdf" 
+                           class="border-2 border-white text-white hover:bg-white hover:text-slate-800 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
+                            <i class="fas fa-download mr-2"></i>Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl opacity-70"></i>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-slate-800 mb-6">About Me</h2>
+                <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                    Senior DevOps Engineer with expertise spanning <strong>AWS, Azure, and GCP</strong>. 
+                    I specialize in building scalable cloud infrastructure, implementing robust CI/CD pipelines, 
+                    and orchestrating containerized applications with Kubernetes. My passion lies in automating 
+                    complex deployments while maintaining security and reliability standards.
+                </p>
+                
+                <!-- Cloud Expertise Cards -->
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                    <div class="card-hover bg-gradient-to-br from-aws-orange/10 to-aws-orange/5 p-6 rounded-xl border border-aws-orange/20">
+                        <i class="fab fa-aws text-aws-orange text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">AWS Expert</h3>
+                        <p class="text-gray-600">EC2, EKS, Lambda, VPC, RDS, S3, CloudFront, IAM</p>
+                    </div>
+                    <div class="card-hover bg-gradient-to-br from-azure-blue/10 to-azure-blue/5 p-6 rounded-xl border border-azure-blue/20">
+                        <i class="fab fa-microsoft text-azure-blue text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Azure Certified</h3>
+                        <p class="text-gray-600">AKS, Functions, VNet, DevOps, ARM Templates</p>
+                    </div>
+                    <div class="card-hover bg-gradient-to-br from-gcp-green/10 to-gcp-green/5 p-6 rounded-xl border border-gcp-green/20">
+                        <i class="fab fa-google text-gcp-green text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">GCP Platform</h3>
+                        <p class="text-gray-600">GKE, Cloud Run, Compute Engine, Cloud Build</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Section -->
+
+    <!-- @COMPONENT: Skills Section -->
+    <section id="skills" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-slate-800 mb-12">Technical Expertise</h2>
+                
+                <!-- Skills Grid with Floating Animation -->
+                <div class="grid md:grid-cols-4 gap-6">
+                    <!-- @MAP: skills.map(skill => ( -->
+                    
+                    <!-- Programming Languages -->
+                    <div class="floating-icon bg-white p-6 rounded-xl shadow-lg border border-gray-200" style="--delay: 0s;">
+                        <i class="fab fa-python text-yellow-500 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Languages</h3>
+                        <p class="text-gray-600 text-sm">Python, Java, Go, C++, Bash</p>
+                    </div>
+                    
+                    <!-- Container Technologies -->
+                    <div class="floating-icon bg-white p-6 rounded-xl shadow-lg border border-gray-200" style="--delay: 0.5s;">
+                        <i class="fab fa-docker text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Containers</h3>
+                        <p class="text-gray-600 text-sm">Docker, Kubernetes, Helm, EKS, AKS, GKE</p>
+                    </div>
+                    
+                    <!-- CI/CD Tools -->
+                    <div class="floating-icon bg-white p-6 rounded-xl shadow-lg border border-gray-200" style="--delay: 1s;">
+                        <i class="fas fa-cogs text-gray-600 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">CI/CD</h3>
+                        <p class="text-gray-600 text-sm">Jenkins, GitHub Actions, CircleCI, ArgoCD</p>
+                    </div>
+                    
+                    <!-- Infrastructure as Code -->
+                    <div class="floating-icon bg-white p-6 rounded-xl shadow-lg border border-gray-200" style="--delay: 1.5s;">
+                        <i class="fas fa-server text-green-600 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">IaC</h3>
+                        <p class="text-gray-600 text-sm">Terraform, Terragrunt, ARM, Ansible</p>
+                    </div>
+                    
+                    <!-- Monitoring & Observability -->
+                    <div class="floating-icon bg-white p-6 rounded-xl shadow-lg border border-gray-200" style="--delay: 2s;">
+                        <i class="fas fa-chart-line text-purple-600 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Monitoring</h3>
+                        <p class="text-gray-600 text-sm">Grafana, Prometheus, ELK, Datadog</p>
+                    </div>
+                    
+                    <!-- Security Tools -->
+                    <div class="floating-icon bg-white p-6 rounded-xl shadow-lg border border-gray-200" style="--delay: 2.5s;">
+                        <i class="fas fa-shield-alt text-red-600 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">DevSecOps</h3>
+                        <p class="text-gray-600 text-sm">Snyk, SonarQube, Trivy, Kyverno</p>
+                    </div>
+                    
+                    <!-- Version Control -->
+                    <div class="floating-icon bg-white p-6 rounded-xl shadow-lg border border-gray-200" style="--delay: 3s;">
+                        <i class="fab fa-git-alt text-orange-600 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Version Control</h3>
+                        <p class="text-gray-600 text-sm">Git, GitHub, GitLab, GitOps</p>
+                    </div>
+                    
+                    <!-- Database & Storage -->
+                    <div class="floating-icon bg-white p-6 rounded-xl shadow-lg border border-gray-200" style="--delay: 3.5s;">
+                        <i class="fas fa-database text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Data & Storage</h3>
+                        <p class="text-gray-600 text-sm">RDS, DynamoDB, S3, EFS, Cosmos DB</p>
+                    </div>
+                    
+                    <!-- @END_MAP )) -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Skills Section -->
+
+    <!-- @COMPONENT: Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-slate-800 mb-12">Professional Experience</h2>
+                
+                <!-- Experience Timeline -->
+                <div class="space-y-12">
+                    <!-- @MAP: experiences.map(experience => ( -->
+                    
+                    <!-- Current Role - Vtechvibrant -->
+                    <div class="card-hover bg-gradient-to-r from-cloud-blue/5 to-transparent p-8 rounded-xl border-l-4 border-cloud-blue">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-800">DevOps Engineer</h3>
+                                <p class="text-cloud-blue font-semibold text-lg">Vtechvibrant (Remote)</p>
+                            </div>
+                            <span class="bg-cloud-blue text-white px-4 py-2 rounded-full text-sm font-medium">
+                                May 2023 – Current
+                            </span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-cloud text-cloud-blue mr-3 mt-1"></i>
+                                Spearheaded multi-cloud infrastructure design across AWS, Azure, and GCP for global scalability
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-cogs text-cloud-blue mr-3 mt-1"></i>
+                                Developed complex CI/CD pipelines using GitHub Actions, Azure Pipelines, CircleCI, and Jenkins
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-dharmachakra text-cloud-blue mr-3 mt-1"></i>
+                                Implemented GitOps workflows with ArgoCD and Helm for secure deployments to EKS, AKS, GKE
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-bar text-cloud-blue mr-3 mt-1"></i>
+                                Reduced incident detection time by 60% with comprehensive monitoring using Grafana, Prometheus
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- SimSol Technologies -->
+                    <div class="card-hover bg-gradient-to-r from-gray-50 to-transparent p-8 rounded-xl border-l-4 border-gray-400">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-800">DevOps Engineer</h3>
+                                <p class="text-gray-600 font-semibold text-lg">SimSol Technologies (Remote)</p>
+                            </div>
+                            <span class="bg-gray-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                                Sep 2022 – May 2023
+                            </span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-rocket text-gray-500 mr-3 mt-1"></i>
+                                Architected end-to-end CI/CD pipelines with automated deployments and rollback capabilities
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-server text-gray-500 mr-3 mt-1"></i>
+                                Led infrastructure automation using Terraform and Terragrunt for multi-account AWS environments
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-percentage text-gray-500 mr-3 mt-1"></i>
+                                Reduced infrastructure costs by 30% through EC2 to containerized microservices migration
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-clock text-gray-500 mr-3 mt-1"></i>
+                                Improved MTTR by 50% with unified observability using Prometheus, Loki, and Grafana
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- VTech Vibrant (Earlier Role) -->
+                    <div class="card-hover bg-gradient-to-r from-green-50 to-transparent p-8 rounded-xl border-l-4 border-green-500">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-800">DevOps Engineer</h3>
+                                <p class="text-green-600 font-semibold text-lg">VTech Vibrant (Remote)</p>
+                            </div>
+                            <span class="bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                                May 2020 – Sep 2022
+                            </span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-tools text-green-500 mr-3 mt-1"></i>
+                                Designed CI/CD pipelines reducing manual errors by 90% and accelerating release cycles
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-boxes text-green-500 mr-3 mt-1"></i>
+                                Implemented Docker containerization and Kubernetes deployments with automated rollout strategies
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-search text-green-500 mr-3 mt-1"></i>
+                                Built centralized logging with ELK Stack enabling real-time log aggregation and debugging
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-dollar-sign text-green-500 mr-3 mt-1"></i>
+                                Optimized AWS costs by 25% through right-sizing, auto-scaling, and Spot Instances
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- @END_MAP )) -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Experience Section -->
+
+    <!-- @COMPONENT: Certifications Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-slate-800 mb-12">Certifications</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- @MAP: certifications.map(cert => ( -->
+                    
+                    <div class="floating-icon card-hover bg-white p-6 rounded-xl shadow-lg border border-azure-blue/20" style="--delay: 0s;">
+                        <i class="fab fa-microsoft text-azure-blue text-4xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Azure DevOps Engineer Expert</h3>
+                        <p class="text-gray-600 text-sm">Microsoft Certified</p>
+                    </div>
+                    
+                    <div class="floating-icon card-hover bg-white p-6 rounded-xl shadow-lg border border-azure-blue/20" style="--delay: 0.5s;">
+                        <i class="fab fa-microsoft text-azure-blue text-4xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Azure Administrator Associate</h3>
+                        <p class="text-gray-600 text-sm">Microsoft Certified</p>
+                    </div>
+                    
+                    <div class="floating-icon card-hover bg-white p-6 rounded-xl shadow-lg border border-aws-orange/20" style="--delay: 1s;">
+                        <i class="fab fa-aws text-aws-orange text-4xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">AWS SysOps Administrator</h3>
+                        <p class="text-gray-600 text-sm">Associate Level</p>
+                    </div>
+                    
+                    <div class="floating-icon card-hover bg-white p-6 rounded-xl shadow-lg border border-gray-800/20" style="--delay: 1.5s;">
+                        <i class="fab fa-github text-gray-800 text-4xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">GitHub Actions</h3>
+                        <p class="text-gray-600 text-sm">Certified</p>
+                    </div>
+                    
+                    <div class="floating-icon card-hover bg-white p-6 rounded-xl shadow-lg border border-green-600/20" style="--delay: 2s;">
+                        <i class="fab fa-android text-green-600 text-4xl mb-4"></i>
+                        <h3 class="font-bold text-lg mb-2">Android Studio</h3>
+                        <p class="text-gray-600 text-sm">Certified</p>
+                    </div>
+                    
+                    <!-- @END_MAP )) -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Certifications Section -->
+
+    <!-- @COMPONENT: Projects Showcase -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-slate-800 mb-12">Key Achievements</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- @MAP: projects.map(project => ( -->
+                    
+                    <!-- Multi-Cloud Infrastructure -->
+                    <div class="card-hover bg-gradient-to-br from-cloud-blue/10 to-blue-50 p-6 rounded-xl border border-cloud-blue/20">
+                        <!-- Modern data center with multiple cloud provider logos -->
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300" 
+                             alt="Multi-cloud infrastructure setup" 
+                             class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-bold mb-3">Multi-Cloud Infrastructure</h3>
+                        <p class="text-gray-600 mb-4">Architected scalable infrastructure across AWS, Azure, and GCP with high availability and global reach.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-aws-orange/10 text-aws-orange px-3 py-1 rounded-full text-sm">AWS</span>
+                            <span class="bg-azure-blue/10 text-azure-blue px-3 py-1 rounded-full text-sm">Azure</span>
+                            <span class="bg-gcp-green/10 text-gcp-green px-3 py-1 rounded-full text-sm">GCP</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Kubernetes Orchestration -->
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border border-purple-200">
+                        <!-- Kubernetes dashboard showing pod orchestration -->
+                        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300" 
+                             alt="Kubernetes container orchestration dashboard" 
+                             class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-bold mb-3">Kubernetes Orchestration</h3>
+                        <p class="text-gray-600 mb-4">Deployed and managed containerized microservices across EKS, AKS, and GKE with zero-downtime deployments.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Helm</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">ArgoCD</span>
+                        </div>
+                    </div>
+                    
+                    <!-- DevSecOps Pipeline -->
+                    <div class="card-hover bg-gradient-to-br from-red-50 to-orange-50 p-6 rounded-xl border border-red-200">
+                        <!-- Security-focused development environment with code scanning -->
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300" 
+                             alt="DevSecOps security scanning and code analysis" 
+                             class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-bold mb-3">DevSecOps Implementation</h3>
+                        <p class="text-gray-600 mb-4">Integrated security scanning and compliance checks into CI/CD pipelines with automated policy enforcement.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Snyk</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">SonarQube</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Kyverno</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Monitoring & Observability -->
+                    <div class="card-hover bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-xl border border-green-200">
+                        <!-- Real-time monitoring dashboard with metrics and graphs -->
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300" 
+                             alt="Monitoring dashboard with real-time metrics and analytics" 
+                             class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-bold mb-3">Monitoring & Observability</h3>
+                        <p class="text-gray-600 mb-4">Built comprehensive monitoring stack reducing incident detection time by 60% with real-time alerting.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Grafana</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Prometheus</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">ELK Stack</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Infrastructure as Code -->
+                    <div class="card-hover bg-gradient-to-br from-indigo-50 to-blue-50 p-6 rounded-xl border border-indigo-200">
+                        <!-- Code editor showing Infrastructure as Code configuration -->
+                        <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300" 
+                             alt="Infrastructure as Code development environment" 
+                             class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-bold mb-3">Infrastructure as Code</h3>
+                        <p class="text-gray-600 mb-4">Automated infrastructure provisioning with Terraform and Terragrunt for consistent, reproducible environments.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Terraform</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Terragrunt</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Ansible</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Cost Optimization -->
+                    <div class="card-hover bg-gradient-to-br from-yellow-50 to-orange-50 p-6 rounded-xl border border-yellow-200">
+                        <!-- Financial dashboard showing cost optimization metrics -->
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300" 
+                             alt="Cost optimization dashboard showing savings and resource usage" 
+                             class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-bold mb-3">Cost Optimization</h3>
+                        <p class="text-gray-600 mb-4">Achieved 25-30% cost reduction through resource optimization, auto-scaling, and strategic cloud resource management.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">FinOps</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Auto-scaling</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Cost Analytics</span>
+                        </div>
+                    </div>
+                    
+                    <!-- @END_MAP )) -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Projects Showcase -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <section id="contact" class="py-20 bg-slate-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Let's Work Together</h2>
+                <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+                    Ready to scale your infrastructure, optimize your deployments, or implement DevSecOps practices? 
+                    Let's discuss how I can help your team achieve operational excellence.
+                </p>
+                
+                <!-- Contact Cards -->
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-slate-700 p-6 rounded-xl text-center card-hover">
+                        <i class="fas fa-envelope text-cloud-blue text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Email</h3>
+                        <a href="mailto:vieerdwivedi@gmail.com" class="text-cloud-blue hover:underline">
+                            vieerdwivedi@gmail.com
+                        </a>
+                    </div>
+                    <div class="bg-slate-700 p-6 rounded-xl text-center card-hover">
+                        <i class="fas fa-phone text-green-400 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">Phone</h3>
+                        <a href="tel:+917045308204" class="text-green-400 hover:underline">
+                            +91 7045308204
+                        </a>
+                    </div>
+                    <div class="bg-slate-700 p-6 rounded-xl text-center card-hover">
+                        <i class="fab fa-linkedin text-blue-400 text-3xl mb-4"></i>
+                        <h3 class="font-semibold text-lg mb-2">LinkedIn</h3>
+                        <a href="#" class="text-blue-400 hover:underline">
+                            Connect with me
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Resume Download CTA -->
+                <div class="bg-gradient-to-r from-cloud-blue to-blue-600 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-4">Download My Resume</h3>
+                    <p class="text-blue-100 mb-6">Get a detailed overview of my experience, skills, and certifications.</p>
+                    <a href="https://docs.google.com/document/d/1pHEBD194mP_L7pCMyZdOVbIuSPjvwErt/export?format=pdf" 
+                       class="bg-white text-cloud-blue px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors inline-flex items-center">
+                        <i class="fas fa-download mr-2"></i>
+                        Download PDF Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-slate-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <p>&copy; 2024 Vieer Dwivedi. All rights reserved.</p>
+                <p class="mt-2">DevOps Engineer | Multi-Cloud Specialist | Available for Hire</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement smooth scrolling navigation
+        (function() {
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // TODO: Implement intersection observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections for scroll animations
+            document.querySelectorAll('section').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+
+            // TODO: Add navbar scroll effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('nav');
+                if (window.scrollY > 100) {
+                    navbar.classList.add('bg-white/95');
+                    navbar.classList.remove('bg-white/80');
+                } else {
+                    navbar.classList.add('bg-white/80');
+                    navbar.classList.remove('bg-white/95');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

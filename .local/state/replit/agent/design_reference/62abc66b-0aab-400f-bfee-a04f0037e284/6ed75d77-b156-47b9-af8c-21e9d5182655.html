@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer Portfolio | Kubernetes & DevSecOps Expert</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Experienced DevOps Engineer specializing in Kubernetes, DevSecOps, and SRE with 5+ years of expertise. View my portfolio and download my resume.">
+    <meta name="keywords" content="DevOps Engineer, Kubernetes, DevSecOps, SRE, Cloud Infrastructure, Container Orchestration, CI/CD, Security">
+    <meta name="author" content="DevOps Portfolio">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="DevOps Engineer Portfolio | Kubernetes & DevSecOps Expert">
+    <meta property="og:description" content="Experienced DevOps Engineer specializing in Kubernetes, DevSecOps, and SRE with 5+ years of expertise.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DevOps Engineer Portfolio">
+    <meta name="twitter:description" content="Experienced DevOps Engineer specializing in Kubernetes, DevSecOps, and SRE">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "DevOps Engineer",
+      "jobTitle": "Senior DevOps Engineer",
+      "description": "Experienced DevOps Engineer specializing in Kubernetes, DevSecOps, and SRE with 5+ years of expertise",
+      "url": "https://yourportfolio.com",
+      "sameAs": ["https://linkedin.com/in/yourprofile", "https://github.com/yourprofile"]
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif']
+                },
+                animation: {
+                    'fade-in': 'fadeIn 1s ease-in-out',
+                    'slide-up': 'slideUp 0.8s ease-out',
+                    'bounce-slow': 'bounce 3s infinite',
+                    'pulse-slow': 'pulse 4s infinite',
+                    'float': 'float 6s ease-in-out infinite'
+                },
+                keyframes: {
+                    fadeIn: {
+                        '0%': { opacity: '0', transform: 'translateY(30px)' },
+                        '100%': { opacity: '1', transform: 'translateY(0)' }
+                    },
+                    slideUp: {
+                        '0%': { opacity: '0', transform: 'translateY(50px)' },
+                        '100%': { opacity: '1', transform: 'translateY(0)' }
+                    },
+                    float: {
+                        '0%, 100%': { transform: 'translateY(0px)' },
+                        '50%': { transform: 'translateY(-20px)' }
+                    }
+                }
+            }
+        }
+    };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(45deg, #06B6D4, #10B981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .glass-effect { backdrop-filter: blur(10px); background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hover-glow:hover { box-shadow: 0 0 30px rgba(6, 182, 212, 0.3); }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-50 font-inter overflow-x-hidden">
+    <!-- @COMPONENT: Navigation [fixed navigation with smooth scroll] -->
+    <nav class="fixed top-0 w-full z-50 glass-effect transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-bold gradient-text">DevOps Pro</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-cyan-400 transition-colors duration-300">Home</a>
+                        <a href="#about" class="hover:text-cyan-400 transition-colors duration-300">About</a>
+                        <a href="#skills" class="hover:text-cyan-400 transition-colors duration-300">Skills</a>
+                        <a href="#experience" class="hover:text-cyan-400 transition-colors duration-300">Experience</a>
+                        <a href="#projects" class="hover:text-cyan-400 transition-colors duration-300">Projects</a>
+                        <a href="#contact" class="hover:text-cyan-400 transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-slate-300 hover:text-cyan-400" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-slate-800">
+                <a href="#home" class="block px-3 py-2 hover:text-cyan-400">Home</a>
+                <a href="#about" class="block px-3 py-2 hover:text-cyan-400">About</a>
+                <a href="#skills" class="block px-3 py-2 hover:text-cyan-400">Skills</a>
+                <a href="#experience" class="block px-3 py-2 hover:text-cyan-400">Experience</a>
+                <a href="#projects" class="block px-3 py-2 hover:text-cyan-400">Projects</a>
+                <a href="#contact" class="block px-3 py-2 hover:text-cyan-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section [animated hero with profile photo and CTA] -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
+        
+        <!-- Animated Background Elements -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
+        <div class="absolute top-40 right-10 w-96 h-96 bg-emerald-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-20 left-1/3 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style="animation-delay: 4s;"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="mb-8 animate-fade-in">
+                    <!-- Professional DevOps engineer workspace with multiple monitors showing Kubernetes dashboards -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300" 
+                         alt="DevOps Professional" 
+                         class="w-48 h-48 rounded-full mx-auto border-4 border-cyan-400 shadow-2xl hover-glow transition-all duration-300 transform hover:scale-105" 
+                         data-mock-image="true" 
+                         data-implementation="Replace with actual professional photo">
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
+                    <span class="gradient-text">DevOps Engineer</span>
+                </h1>
+                
+                <h2 class="text-2xl md:text-3xl text-slate-300 mb-8 animate-slide-up" style="animation-delay: 0.2s;">
+                    Kubernetes • DevSecOps • SRE Specialist
+                </h2>
+                
+                <p class="text-lg md:text-xl text-slate-400 mb-12 max-w-3xl mx-auto animate-slide-up" style="animation-delay: 0.4s;">
+                    Transforming infrastructure with 5+ years of expertise in cloud-native technologies, 
+                    container orchestration, and security-first DevOps practices.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up" style="animation-delay: 0.6s;">
+                    <a href="https://docs.google.com/document/d/1pHEBD194mP_L7pCMyZdOVbIuSPjvwErt/export?format=pdf" 
+                       target="_blank"
+                       class="bg-gradient-to-r from-cyan-500 to-emerald-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-cyan-500/25 flex items-center gap-3">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                    <a href="#contact" 
+                       class="border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-full font-semibold text-lg hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 flex items-center gap-3">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                
+                <div class="flex justify-center space-x-8 mt-12 animate-slide-up" style="animation-delay: 0.8s;">
+                    <a href="https://linkedin.com" class="text-slate-400 hover:text-cyan-400 transform hover:scale-110 transition-all duration-300">
+                        <i class="fab fa-linkedin text-3xl"></i>
+                    </a>
+                    <a href="https://github.com" class="text-slate-400 hover:text-cyan-400 transform hover:scale-110 transition-all duration-300">
+                        <i class="fab fa-github text-3xl"></i>
+                    </a>
+                    <a href="https://twitter.com" class="text-slate-400 hover:text-cyan-400 transform hover:scale-110 transition-all duration-300">
+                        <i class="fab fa-twitter text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
+            <i class="fas fa-chevron-down text-cyan-400 text-2xl"></i>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: About Section [professional introduction with key stats] -->
+    <section id="about" class="py-20 bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">About Me</h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Passionate about building scalable, secure, and efficient cloud infrastructure
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        With over 5 years of hands-on experience in DevOps, I specialize in designing and implementing 
+                        robust cloud infrastructure solutions. My expertise spans across container orchestration with 
+                        Kubernetes, security-first DevOps practices, and site reliability engineering.
+                    </p>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        I'm passionate about automation, continuous integration/deployment, and creating systems that 
+                        are not just functional but also secure, scalable, and maintainable. My approach combines 
+                        technical excellence with a deep understanding of business requirements.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center p-6 glass-effect rounded-xl hover-glow transition-all duration-300">
+                            <div class="text-3xl font-bold gradient-text">5+</div>
+                            <div class="text-slate-400">Years Experience</div>
+                        </div>
+                        <div class="text-center p-6 glass-effect rounded-xl hover-glow transition-all duration-300">
+                            <div class="text-3xl font-bold gradient-text">50+</div>
+                            <div class="text-slate-400">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Modern DevOps workspace with multiple monitors displaying Kubernetes dashboard -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="DevOps workspace with multiple monitors" 
+                         class="rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Section -->
+
+    <!-- @COMPONENT: Skills Section [interactive skill cards with progress indicators] -->
+    <section id="skills" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Technical Skills</h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Expertise across the entire DevOps lifecycle and cloud technologies
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: skills.map(skill => ( -->
+                <div class="glass-effect rounded-xl p-8 hover-glow transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-docker text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-100 mb-2">Container Technologies</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Docker</span>
+                            <span class="text-cyan-400">Expert</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-11/12"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Kubernetes</span>
+                            <span class="text-cyan-400">Expert</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-11/12"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-xl p-8 hover-glow transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cloud text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-100 mb-2">Cloud Platforms</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">AWS</span>
+                            <span class="text-cyan-400">Advanced</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-5/6"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Google Cloud</span>
+                            <span class="text-cyan-400">Advanced</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-5/6"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-xl p-8 hover-glow transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-alt text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-100 mb-2">Security & Compliance</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">DevSecOps</span>
+                            <span class="text-cyan-400">Expert</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-11/12"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Vulnerability Scanning</span>
+                            <span class="text-cyan-400">Advanced</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-5/6"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-xl p-8 hover-glow transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-code-branch text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-100 mb-2">CI/CD & Automation</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Jenkins</span>
+                            <span class="text-cyan-400">Expert</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-11/12"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">GitLab CI</span>
+                            <span class="text-cyan-400">Advanced</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-5/6"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-xl p-8 hover-glow transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-line text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-100 mb-2">Monitoring & Observability</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Prometheus</span>
+                            <span class="text-cyan-400">Expert</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-11/12"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Grafana</span>
+                            <span class="text-cyan-400">Expert</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-11/12"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-xl p-8 hover-glow transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cogs text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-100 mb-2">Infrastructure as Code</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Terraform</span>
+                            <span class="text-cyan-400">Expert</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-11/12"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-300">Ansible</span>
+                            <span class="text-cyan-400">Advanced</span>
+                        </div>
+                        <div class="w-full bg-slate-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2 rounded-full w-5/6"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Skills Section -->
+
+    <!-- @COMPONENT: Experience Timeline [career progression with key achievements] -->
+    <section id="experience" class="py-20 bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Experience</h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Building robust infrastructure solutions across diverse industries
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-cyan-500 to-emerald-500 rounded-full"></div>
+                
+                <!-- @MAP: experiences.map((exp, index) => ( -->
+                <div class="mb-16 flex items-center">
+                    <div class="w-1/2 pr-8 text-right">
+                        <div class="glass-effect rounded-xl p-6 hover-glow transition-all duration-300">
+                            <div class="text-sm text-cyan-400 font-semibold mb-2">2022 - Present</div>
+                            <h3 class="text-2xl font-bold text-slate-100 mb-2">Senior DevOps Engineer</h3>
+                            <div class="text-lg text-emerald-400 mb-4">TechCorp Solutions</div>
+                            <p class="text-slate-300 mb-4">
+                                Leading infrastructure automation initiatives and implementing DevSecOps practices 
+                                for enterprise-level applications. Managed Kubernetes clusters serving 10M+ users.
+                            </p>
+                            <div class="flex flex-wrap gap-2 justify-end">
+                                <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                                <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">AWS</span>
+                                <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Terraform</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full border-4 border-slate-800"></div>
+                    
+                    <div class="w-1/2 pl-8"></div>
+                </div>
+
+                <div class="mb-16 flex items-center">
+                    <div class="w-1/2 pr-8"></div>
+                    
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full border-4 border-slate-800"></div>
+                    
+                    <div class="w-1/2 pl-8">
+                        <div class="glass-effect rounded-xl p-6 hover-glow transition-all duration-300">
+                            <div class="text-sm text-cyan-400 font-semibold mb-2">2020 - 2022</div>
+                            <h3 class="text-2xl font-bold text-slate-100 mb-2">DevOps Engineer</h3>
+                            <div class="text-lg text-emerald-400 mb-4">CloudScale Inc.</div>
+                            <p class="text-slate-300 mb-4">
+                                Designed and implemented CI/CD pipelines, reducing deployment time by 70%. 
+                                Architected microservices infrastructure using Docker and Kubernetes.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Docker</span>
+                                <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Jenkins</span>
+                                <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-16 flex items-center">
+                    <div class="w-1/2 pr-8 text-right">
+                        <div class="glass-effect rounded-xl p-6 hover-glow transition-all duration-300">
+                            <div class="text-sm text-cyan-400 font-semibold mb-2">2019 - 2020</div>
+                            <h3 class="text-2xl font-bold text-slate-100 mb-2">Junior DevOps Engineer</h3>
+                            <div class="text-lg text-emerald-400 mb-4">StartupTech</div>
+                            <p class="text-slate-300 mb-4">
+                                Built foundational DevOps practices from scratch. Implemented infrastructure 
+                                monitoring and automated deployment processes for rapid startup growth.
+                            </p>
+                            <div class="flex flex-wrap gap-2 justify-end">
+                                <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Linux</span>
+                                <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full border-4 border-slate-800"></div>
+                    
+                    <div class="w-1/2 pl-8"></div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Experience Timeline -->
+
+    <!-- @COMPONENT: Projects Portfolio [showcase of key projects with technologies] -->
+    <section id="projects" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Featured Projects</h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Real-world implementations showcasing DevOps excellence
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: projects.map(project => ( -->
+                <div class="glass-effect rounded-xl overflow-hidden hover-glow transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- Kubernetes cluster dashboard with multiple pods and services -->
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Kubernetes cluster dashboard" 
+                         class="w-full h-48 object-cover">
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-100 mb-3">Enterprise Kubernetes Platform</h3>
+                        <p class="text-slate-300 mb-4">
+                            Designed and deployed a multi-cluster Kubernetes platform serving 50+ microservices 
+                            with 99.9% uptime and automated scaling.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Kubernetes</span>
+                            <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Helm</span>
+                            <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Istio</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-emerald-400 font-semibold">Production</span>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-xl overflow-hidden hover-glow transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- Cloud infrastructure architecture diagram with security elements -->
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Cloud infrastructure with security monitoring" 
+                         class="w-full h-48 object-cover">
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-100 mb-3">DevSecOps Pipeline</h3>
+                        <p class="text-slate-300 mb-4">
+                            Implemented security-first CI/CD pipeline with automated vulnerability scanning, 
+                            compliance checks, and security gate policies.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">GitLab CI</span>
+                            <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Snyk</span>
+                            <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">OWASP</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-emerald-400 font-semibold">Enterprise</span>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-effect rounded-xl overflow-hidden hover-glow transition-all duration-300 transform hover:-translate-y-2">
+                    <!-- Cloud monitoring dashboard with metrics and graphs -->
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="Monitoring dashboard with real-time metrics" 
+                         class="w-full h-48 object-cover">
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-100 mb-3">Infrastructure Monitoring</h3>
+                        <p class="text-slate-300 mb-4">
+                            Built comprehensive monitoring solution with custom dashboards, alerting, 
+                            and automated incident response for 24/7 operations.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Prometheus</span>
+                            <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">Grafana</span>
+                            <span class="bg-slate-700 text-cyan-400 px-3 py-1 rounded-full text-sm">ELK Stack</span>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-emerald-400 font-semibold">SRE</span>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com" 
+                   class="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-500 to-emerald-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-cyan-500/25">
+                    <i class="fab fa-github"></i>
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Projects Portfolio -->
+
+    <!-- @COMPONENT: Contact Section [contact form with social links] -->
+    <section id="contact" class="py-20 bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Get In Touch</h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Ready to discuss your next infrastructure project? Let's connect!
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="space-y-8">
+                    <div class="glass-effect rounded-xl p-8">
+                        <h3 class="text-2xl font-bold text-slate-100 mb-6">Let's Collaborate</h3>
+                        <p class="text-slate-300 mb-6 leading-relaxed">
+                            I'm always interested in discussing new opportunities, challenging projects, 
+                            and innovative infrastructure solutions. Whether you need help with cloud migration, 
+                            Kubernetes implementation, or DevSecOps transformation, let's talk.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="text-slate-300">Email</div>
+                                    <div class="text-cyan-400 font-semibold" data-mock="true">devops.professional@email.com</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="text-slate-300">Phone</div>
+                                    <div class="text-cyan-400 font-semibold" data-mock="true">+1 (555) 123-4567</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="text-slate-300">Location</div>
+                                    <div class="text-cyan-400 font-semibold" data-mock="true">San Francisco, CA</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-6 mt-8">
+                            <a href="https://linkedin.com" class="text-slate-400 hover:text-cyan-400 transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </a>
+                            <a href="https://github.com" class="text-slate-400 hover:text-cyan-400 transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-github text-2xl"></i>
+                            </a>
+                            <a href="https://twitter.com" class="text-slate-400 hover:text-cyan-400 transform hover:scale-110 transition-all duration-300">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-effect rounded-xl p-8">
+                    <form class="space-y-6" data-implementation="Implement form submission with validation">
+                        <div>
+                            <label class="block text-slate-300 text-sm font-medium mb-2">Name</label>
+                            <input type="text" 
+                                   class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-400 focus:outline-none focus:border-cyan-400 transition-colors" 
+                                   placeholder="Your full name"
+                                   data-mock="true">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-slate-300 text-sm font-medium mb-2">Email</label>
+                            <input type="email" 
+                                   class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-400 focus:outline-none focus:border-cyan-400 transition-colors" 
+                                   placeholder="your.email@example.com"
+                                   data-mock="true">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-slate-300 text-sm font-medium mb-2">Subject</label>
+                            <select class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-slate-100 focus:outline-none focus:border-cyan-400 transition-colors" 
+                                    data-mock="true">
+                                <option>Project Consultation</option>
+                                <option>Job Opportunity</option>
+                                <option>Technical Discussion</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-slate-300 text-sm font-medium mb-2">Message</label>
+                            <textarea rows="5" 
+                                      class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-slate-100 placeholder-slate-400 focus:outline-none focus:border-cyan-400 transition-colors resize-none" 
+                                      placeholder="Tell me about your project or opportunity..."
+                                      data-mock="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-gradient-to-r from-cyan-500 to-emerald-500 text-white py-4 rounded-lg font-semibold text-lg hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-cyan-500/25"
+                                data-event="click:handleContactSubmit">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer [simple footer with copyright and links] -->
+    <footer class="bg-slate-900 py-12 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-slate-400 text-center md:text-left mb-4 md:mb-0">
+                    <p>&copy; 2024 DevOps Professional. All rights reserved.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors">Privacy</a>
+                    <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors">Terms</a>
+                    <a href="https://docs.google.com/document/d/1pHEBD194mP_L7pCMyZdOVbIuSPjvwErt/export?format=pdf" 
+                       target="_blank" 
+                       class="text-slate-400 hover:text-cyan-400 transition-colors">Resume</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll for navigation links
+        (function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const navHeight = document.getElementById('navbar').offsetHeight;
+                        const targetPosition = target.offsetTop - navHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                    // Close mobile menu if open
+                    const menu = document.getElementById('mobile-menu');
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Navbar background change on scroll
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.95)';
+                } else {
+                    navbar.style.backgroundColor = 'rgba(15, 23, 42, 0.8)';
+                }
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe skill cards and project cards for animation
+            document.querySelectorAll('.glass-effect').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+                observer.observe(el);
+            });
+        })();
+        
+        // TODO: Implement business logic for form submission, API calls, and state management
+    </script>
+</body>
+</html>

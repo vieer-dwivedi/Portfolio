@@ -25,8 +25,8 @@ export default function Navigation() {
     <motion.nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200" 
-          : "bg-white/90 backdrop-blur-sm"
+          ? "bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-700" 
+          : "bg-gray-900/90 backdrop-blur-sm"
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -36,17 +36,17 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
             <motion.div 
-              className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+              className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
               whileHover={{ scale: 1.05 }}
             >
-              Vieer <span className="text-orange-500">Dwivedi</span>
+              Vieer <span className="text-orange-400">Dwivedi</span>
             </motion.div>
             
             {/* Contact Info in Header */}
             <div className="hidden lg:flex items-center space-x-6 text-sm">
               <motion.a 
                 href="mailto:vieerdwivedi@gmail.com"
-                className="flex items-center text-slate-600 hover:text-blue-600 transition-colors"
+                className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
                 whileHover={{ scale: 1.05 }}
               >
                 <i className="fas fa-envelope mr-2"></i>
@@ -54,7 +54,7 @@ export default function Navigation() {
               </motion.a>
               <motion.a 
                 href="tel:+917045308204"
-                className="flex items-center text-slate-600 hover:text-blue-600 transition-colors"
+                className="flex items-center text-gray-300 hover:text-blue-400 transition-colors"
                 whileHover={{ scale: 1.05 }}
               >
                 <i className="fas fa-phone mr-2"></i>
@@ -74,7 +74,7 @@ export default function Navigation() {
               <motion.button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-slate-600 hover:text-blue-600 transition-colors font-medium"
+                className="text-gray-300 hover:text-blue-400 transition-colors font-medium"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >

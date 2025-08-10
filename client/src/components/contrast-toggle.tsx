@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { useAccessibilityAnnouncer } from './accessibility-announcer';
 import { 
   DropdownMenu,
   DropdownMenuContent,
@@ -28,7 +27,22 @@ export default function ContrastToggle() {
   });
 
   const [isOpen, setIsOpen] = useState(false);
-  const { announce } = useAccessibilityAnnouncer();
+
+  // Simple announcement function for screen readers
+  const announce = (message: string) => {
+    const announcement = document.createElement('div');
+    announcement.setAttribute('aria-live', 'polite');
+    announcement.setAttribute('aria-atomic', 'true');
+    announcement.className = 'sr-only absolute -top-full';
+    announcement.textContent = message;
+    document.body.appendChild(announcement);
+    
+    setTimeout(() => {
+      if (document.body.contains(announcement)) {
+        document.body.removeChild(announcement);
+      }
+    }, 1000);
+  };
 
   // Load saved settings on mount
   useEffect(() => {
@@ -113,20 +127,18 @@ export default function ContrastToggle() {
         enhanced: 'Enhanced contrast',
         inverted: 'Inverted colors'
       };
-      announce(`Contrast mode changed to ${modeNames[newSettings.mode]}`, 'polite');
+      announce(`Contrast mode changed to ${modeNames[newSettings.mode]}`);
     }
     
     if (newSettings.colorBlindFriendly !== undefined) {
       announce(
-        `Color blind friendly mode ${newSettings.colorBlindFriendly ? 'enabled' : 'disabled'}`, 
-        'polite'
+        `Color blind friendly mode ${newSettings.colorBlindFriendly ? 'enabled' : 'disabled'}`
       );
     }
     
     if (newSettings.reducedMotion !== undefined) {
       announce(
-        `Reduced motion ${newSettings.reducedMotion ? 'enabled' : 'disabled'}`, 
-        'polite'
+        `Reduced motion ${newSettings.reducedMotion ? 'enabled' : 'disabled'}`
       );
     }
   };
