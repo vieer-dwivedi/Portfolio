@@ -1,0 +1,17 @@
+# CloudFront/Netlify/Vercel redirects for SPA routing
+/*    /index.html   200
+
+# SEO-friendly redirects for better discoverability
+/hire-devops-engineer              /devops-engineer-hire              301
+/kubernetes-expert                 /kubernetes-consultant             301
+/aws-expert                       /aws-devops-expert                 301
+/azure-expert                     /azure-cloud-architect             301
+/gcp-expert                       /gcp-infrastructure-specialist     301
+/devops-freelancer                /devops-engineer-hire              301
+/kubernetes-freelancer            /kubernetes-consultant             301
+/site-reliability-engineer        /sre-engineer                      301
+/infrastructure-engineer          /devops-engineer-hire              301
+/cloud-architect                  /aws-devops-expert                 301
+
+# Cache headers for static assets (CloudFront compatible)
+/assets/*  Cache-Control: public, max-age=31536000, immutable
