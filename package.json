@@ -11,7 +11,7 @@
     "export": "next export",
     "db:push": "drizzle-kit push",
   "predeploy": "vite build",
-  "deploy": "gh-pages -d dist"
+  "deploy": "gh-pages -d dist -r  git@github.com-vieer-dwivedi:vieer-dwivedi/Portfolio.git"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
