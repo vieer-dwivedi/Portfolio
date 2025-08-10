@@ -79,8 +79,16 @@ export default function ContactSection() {
 
             {/* Availability Status */}
             <motion.div 
-              className="inline-flex items-center bg-green-500/20 text-green-300 px-8 py-4 rounded-full border border-green-500/30 mb-12 backdrop-blur-sm"
+              className="inline-flex items-center bg-green-500/20 text-green-300 px-8 py-4 rounded-full border border-green-500/30 mb-12 backdrop-blur-sm cursor-pointer group"
               animate={{ scale: [1, 1.02, 1] }}
+              whileHover={{
+                scale: 1.05,
+                backgroundColor: "rgba(34, 197, 94, 0.3)",
+                borderColor: "rgba(34, 197, 94, 0.5)",
+                boxShadow: "0 10px 30px rgba(34, 197, 94, 0.2)",
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.98 }}
               initial={{ y: 30, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ 
@@ -91,11 +99,35 @@ export default function ContactSection() {
               viewport={{ once: true }}
             >
               <motion.div 
-                className="w-4 h-4 bg-green-400 rounded-full mr-3"
-                animate={{ opacity: [1, 0.5, 1] }}
-                transition={{ duration: 1, repeat: Infinity }}
-              />
-              <span className="text-lg font-bold">Available for New Projects</span>
+                className="w-4 h-4 bg-green-400 rounded-full mr-3 relative"
+                animate={{ 
+                  opacity: [1, 0.5, 1],
+                  scale: [1, 1.2, 1]
+                }}
+                whileHover={{
+                  scale: 1.5,
+                  boxShadow: "0 0 20px rgba(34, 197, 94, 0.8)",
+                  transition: { duration: 0.2 }
+                }}
+                transition={{ 
+                  opacity: { duration: 1, repeat: Infinity },
+                  scale: { duration: 1, repeat: Infinity }
+                }}
+              >
+                <motion.div
+                  className="absolute inset-0 bg-green-400 rounded-full group-hover:animate-ping"
+                  style={{ animationDuration: '1s' }}
+                />
+              </motion.div>
+              <motion.span 
+                className="text-lg font-bold group-hover:text-green-200 transition-colors duration-300"
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 }
+                }}
+              >
+                Available for New Projects
+              </motion.span>
             </motion.div>
           </motion.div>
           
@@ -129,11 +161,36 @@ export default function ContactSection() {
                     
                     <motion.a 
                       href={method.href}
-                      className={`${method.color} hover:text-white text-lg font-semibold hover:underline transition-colors`}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
+                      className={`${method.color} hover:text-white text-lg font-semibold relative group transition-all duration-300`}
+                      whileHover={{ 
+                        scale: 1.05,
+                        y: -2,
+                        transition: { type: "spring", stiffness: 400, damping: 10 }
+                      }}
+                      whileTap={{ 
+                        scale: 0.98,
+                        transition: { duration: 0.1 }
+                      }}
+                      onHoverStart={() => {
+                        // Add ripple effect on hover
+                      }}
                     >
-                      {method.content}
+                      <span className="relative z-10">{method.content}</span>
+                      <motion.div
+                        className="absolute inset-x-0 bottom-0 h-0.5 bg-current origin-left"
+                        initial={{ scaleX: 0 }}
+                        whileHover={{ scaleX: 1 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                      />
+                      <motion.div
+                        className="absolute inset-0 bg-white/10 rounded-lg -z-10"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileHover={{ 
+                          opacity: 1, 
+                          scale: 1,
+                          transition: { duration: 0.2 }
+                        }}
+                      />
                     </motion.a>
                   </CardContent>
                 </Card>
@@ -154,17 +211,41 @@ export default function ContactSection() {
               {availability.map((item, index) => (
                 <motion.div
                   key={index}
-                  className="text-center p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300"
-                  whileHover={{ y: -5, scale: 1.02 }}
+                  className="text-center p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 cursor-pointer group"
+                  whileHover={{ 
+                    y: -8, 
+                    scale: 1.05,
+                    rotateY: 5,
+                    boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
+                    transition: { type: "spring", stiffness: 300, damping: 20 }
+                  }}
+                  whileTap={{ 
+                    scale: 0.98,
+                    rotateY: 0,
+                    transition: { duration: 0.1 }
+                  }}
                   initial={{ y: 20, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
                   <motion.i 
-                    className={`${item.icon} text-3xl mb-3 block ${item.available ? 'text-green-400' : 'text-gray-400'}`}
-                    animate={{ y: [-1, 1, -1] }}
-                    transition={{ duration: 2 + index * 0.3, repeat: Infinity, ease: "easeInOut" }}
+                    className={`${item.icon} text-3xl mb-3 block ${item.available ? 'text-green-400 group-hover:text-green-300' : 'text-gray-400'}`}
+                    animate={{ 
+                      y: [-1, 1, -1],
+                      rotate: [0, 0, 0]
+                    }}
+                    whileHover={{
+                      scale: 1.2,
+                      rotate: [0, -5, 5, -5, 0],
+                      transition: { 
+                        scale: { duration: 0.2 },
+                        rotate: { duration: 0.6, repeat: 1 }
+                      }
+                    }}
+                    transition={{ 
+                      y: { duration: 2 + index * 0.3, repeat: Infinity, ease: "easeInOut" }
+                    }}
                   />
                   <div className="font-semibold text-lg">{item.label}</div>
                   <div className="text-sm text-green-300 mt-2">
@@ -207,30 +288,75 @@ export default function ContactSection() {
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                   <motion.a
                     href="https://docs.google.com/document/d/1pHEBD194mP_L7pCMyZdOVbIuSPjvwErt/export?format=pdf"
-                    className="bg-white text-blue-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-gray-100 transition-colors inline-flex items-center shadow-2xl"
-                    whileHover={{ scale: 1.05, y: -3 }}
-                    whileTap={{ scale: 0.95 }}
+                    className="bg-white text-blue-600 px-10 py-5 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 inline-flex items-center shadow-2xl relative overflow-hidden group"
+                    whileHover={{ 
+                      scale: 1.08, 
+                      y: -5,
+                      boxShadow: "0 25px 50px rgba(0,0,0,0.25)",
+                      transition: { type: "spring", stiffness: 400, damping: 15 }
+                    }}
+                    whileTap={{ 
+                      scale: 0.96,
+                      transition: { duration: 0.1 }
+                    }}
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
                     viewport={{ once: true }}
+                    onHoverStart={() => {}}
                   >
-                    <i className="fas fa-download mr-3"></i>
-                    Download Resume
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                    />
+                    <motion.i 
+                      className="fas fa-download mr-3 relative z-10"
+                      whileHover={{
+                        y: [-2, 2, -2],
+                        transition: { duration: 0.6, repeat: 1 }
+                      }}
+                    />
+                    <span className="relative z-10">Download Resume</span>
+                    <motion.div
+                      className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"
+                      initial={{ scale: 0 }}
+                      whileHover={{ scale: 1 }}
+                    />
                   </motion.a>
                   
                   <motion.a
                     href="mailto:vieerdwivedi@gmail.com"
-                    className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-10 py-5 rounded-full font-bold text-xl transition-all inline-flex items-center"
-                    whileHover={{ scale: 1.05, y: -3 }}
-                    whileTap={{ scale: 0.95 }}
+                    className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-10 py-5 rounded-full font-bold text-xl transition-all duration-300 inline-flex items-center relative overflow-hidden group"
+                    whileHover={{ 
+                      scale: 1.08, 
+                      y: -5,
+                      borderColor: "#ffffff",
+                      boxShadow: "0 25px 50px rgba(255,255,255,0.1)",
+                      transition: { type: "spring", stiffness: 400, damping: 15 }
+                    }}
+                    whileTap={{ 
+                      scale: 0.96,
+                      transition: { duration: 0.1 }
+                    }}
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.9 }}
                     viewport={{ once: true }}
                   >
-                    <i className="fas fa-envelope mr-3"></i>
-                    Start a Project
+                    <motion.div
+                      className="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out rounded-full"
+                    />
+                    <motion.i 
+                      className="fas fa-envelope mr-3 relative z-10 group-hover:text-blue-600"
+                      whileHover={{
+                        rotate: [0, -10, 10, -5, 0],
+                        transition: { duration: 0.6, repeat: 1 }
+                      }}
+                    />
+                    <span className="relative z-10 group-hover:text-blue-600 transition-colors duration-300">Start a Project</span>
+                    <motion.div
+                      className="absolute inset-0 border-2 border-white rounded-full scale-110 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500"
+                      style={{ borderStyle: 'dashed' }}
+                    />
                   </motion.a>
                 </div>
               </CardContent>
