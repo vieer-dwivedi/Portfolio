@@ -56,6 +56,9 @@
     <link rel="alternate" href="https://vieerdwivedi.dev" hreflang="en">
     <link rel="alternate" href="https://vieerdwivedi.dev" hreflang="x-default">
     
+    <!-- Sitemap reference for search engines -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Sitemap">
+    
     <!-- JSON-LD Structured Data for enhanced SEO -->
     <script type="application/ld+json">
     {
@@ -158,14 +161,26 @@
     <!-- Font Awesome with integrity check -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
     
-    <!-- Favicon and App Icons (optional - enhance if you have custom icons) -->
+    <!-- Favicon and App Icons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- PWA Support -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Vieer Dwivedi DevOps">
     
     <!-- Theme color for mobile browsers -->
     <meta name="theme-color" content="#3B82F6">
     <meta name="msapplication-TileColor" content="#3B82F6">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Additional SEO enhancements -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
   </head>
   <body>
     <div id="root"></div>
