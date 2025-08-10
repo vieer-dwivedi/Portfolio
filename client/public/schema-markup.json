@@ -1,0 +1,189 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://vieerdwivedi.dev#vieer-dwivedi",
+      "name": "Vieer Dwivedi",
+      "alternateName": ["Vieer", "DevOps Engineer Vieer", "Kubernetes Expert Vieer"],
+      "description": "Expert DevOps Engineer with 5+ years experience in multi-cloud infrastructure (AWS, Azure, GCP), Kubernetes orchestration, and DevSecOps implementation. Available for global remote contracts and consulting.",
+      "url": "https://vieerdwivedi.dev",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+        "width": 400,
+        "height": 400
+      },
+      "sameAs": [
+        "https://linkedin.com/in/vieer-dwivedi",
+        "https://github.com/vieerdwivedi",
+        "https://twitter.com/vieerdwivedi"
+      ],
+      "jobTitle": [
+        "DevOps Engineer",
+        "Kubernetes Consultant", 
+        "Site Reliability Engineer",
+        "Cloud Infrastructure Specialist",
+        "DevSecOps Expert"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance / Contract Work",
+        "description": "Available for global remote DevOps consulting and contracting"
+      },
+      "knowsAbout": [
+        {
+          "@type": "Thing",
+          "name": "DevOps",
+          "description": "Infrastructure automation, CI/CD pipelines, deployment strategies"
+        },
+        {
+          "@type": "Thing", 
+          "name": "Kubernetes",
+          "description": "Container orchestration, microservices deployment, cluster management"
+        },
+        {
+          "@type": "Thing",
+          "name": "Amazon Web Services",
+          "description": "AWS certified solutions architect and SysOps administrator"
+        },
+        {
+          "@type": "Thing",
+          "name": "Microsoft Azure",
+          "description": "Azure DevOps Expert and Administrator certified"
+        },
+        {
+          "@type": "Thing",
+          "name": "Google Cloud Platform",
+          "description": "GCP infrastructure and application deployment"
+        },
+        {
+          "@type": "Thing",
+          "name": "Docker",
+          "description": "Containerization and application packaging"
+        },
+        {
+          "@type": "Thing",
+          "name": "Terraform",
+          "description": "Infrastructure as Code implementation"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AWS Certified SysOps Administrator – Associate",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Amazon Web Services",
+            "url": "https://aws.amazon.com"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Azure DevOps Engineer Expert",
+          "credentialCategory": "certification", 
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Microsoft",
+            "url": "https://microsoft.com"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Azure Administrator Associate",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization", 
+            "name": "Microsoft",
+            "url": "https://microsoft.com"
+          }
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-7045308204",
+          "contactType": "customer service",
+          "availableLanguage": "English"
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "vieerdwivedi@gmail.com",
+          "contactType": "customer service",
+          "availableLanguage": "English"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN",
+        "addressRegion": "Remote Worldwide"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://vieerdwivedi.dev#devops-services",
+      "name": "DevOps Engineering Services",
+      "description": "Professional DevOps, Kubernetes, and cloud infrastructure consulting services",
+      "provider": {
+        "@id": "https://vieerdwivedi.dev#vieer-dwivedi"
+      },
+      "serviceType": [
+        "DevOps Consulting",
+        "Kubernetes Implementation", 
+        "Cloud Migration",
+        "CI/CD Pipeline Development",
+        "Infrastructure Automation",
+        "DevSecOps Implementation",
+        "Site Reliability Engineering"
+      ],
+      "areaServed": {
+        "@type": "Place",
+        "name": "Global Remote"
+      },
+      "availableChannel": [
+        {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://vieerdwivedi.dev/devops-engineer-hire",
+          "serviceName": "DevOps Engineer Hire"
+        },
+        {
+          "@type": "ServiceChannel", 
+          "serviceUrl": "https://vieerdwivedi.dev/kubernetes-consultant",
+          "serviceName": "Kubernetes Consultant"
+        }
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "DevOps Consulting",
+          "description": "Infrastructure automation, CI/CD pipelines, cloud migration",
+          "availability": "InStock",
+          "priceRange": "Competitive hourly and project rates"
+        },
+        {
+          "@type": "Offer", 
+          "name": "Kubernetes Implementation",
+          "description": "Container orchestration, cluster setup, microservices deployment",
+          "availability": "InStock", 
+          "priceRange": "Competitive hourly and project rates"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vieerdwivedi.dev#website",
+      "url": "https://vieerdwivedi.dev",
+      "name": "Vieer Dwivedi - DevOps Engineer Portfolio",
+      "description": "Professional portfolio showcasing DevOps engineering expertise, certifications, and availability for global remote contracts",
+      "publisher": {
+        "@id": "https://vieerdwivedi.dev#vieer-dwivedi"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://vieerdwivedi.dev/sitemap",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}

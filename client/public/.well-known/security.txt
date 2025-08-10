@@ -1,0 +1,9 @@
+Contact: vieerdwivedi@gmail.com
+Expires: 2025-12-31T23:59:59.000Z
+Acknowledgments: https://vieerdwivedi.dev
+Preferred-Languages: en
+Canonical: https://vieerdwivedi.dev/.well-known/security.txt
+
+# Security Policy
+# If you discover a security vulnerability, please contact me directly
+# This portfolio site showcases DevOps security expertise and best practices

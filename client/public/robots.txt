@@ -1,17 +1,36 @@
 # robots.txt for Vieer Dwivedi - DevOps Engineer Portfolio
-# This site is optimized for search engine indexing to help potential clients find DevOps services
+# Optimized for maximum search visibility for DevOps contractor discovery
 
 User-agent: *
 Allow: /
+Allow: /devops-engineer-hire
+Allow: /kubernetes-consultant
+Allow: /aws-devops-expert
+Allow: /azure-cloud-architect
+Allow: /gcp-infrastructure-specialist
+Allow: /sre-engineer
+Allow: /devsecops-consultant
+Allow: /ci-cd-automation-expert
+Allow: /sitemap
+Allow: /freelance-devops-engineer.html
 
-# Sitemap location
+# High-priority SEO pages for aggressive indexing
+Disallow: 
+
+# Crawl-delay for respectful but frequent indexing
+Crawl-delay: 1
+
+# Sitemap locations for comprehensive indexing
 Sitemap: https://vieerdwivedi.dev/sitemap.xml
+Sitemap: https://vieerdwivedi.dev/sitemap-index.xml
 
-# Additional sitemaps (if needed in future)
-# Sitemap: https://vieerdwivedi.dev/sitemap-projects.xml
-# Sitemap: https://vieerdwivedi.dev/sitemap-blog.xml
+# Additional indexing instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
 
-# Crawl-delay for respectful crawling (optional)
+User-agent: Bingbot
+Allow: /
 Crawl-delay: 1
 
 # Allow all major search engines

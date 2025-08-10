@@ -6,6 +6,12 @@ This is a professional portfolio website for Vieer Dwivedi, a DevOps Engineer wi
 
 Preferred communication style: Simple, everyday language.
 
+## SEO Requirements
+- Maximum search visibility for DevOps-related keywords
+- Target anyone searching for DevOps, SRE, Kubernetes, or freelancing
+- Aggressive keyword optimization for contractor discovery
+- Multiple landing pages for different search intents
+
 # System Architecture
 
 ## Frontend Architecture
