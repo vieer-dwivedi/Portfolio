@@ -1,0 +1,25 @@
+# humanstxt.org/
+
+/* TEAM */
+Developer: Vieer Dwivedi
+Contact: vieerdwivedi@gmail.com
+LinkedIn: https://linkedin.com/in/vieer-dwivedi  
+GitHub: https://github.com/vieerdwivedi
+Location: Remote Worldwide
+
+/* SITE */
+Site Name: Vieer Dwivedi - DevOps Engineer Portfolio
+Language: English
+Doctype: HTML5
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React, TypeScript, Tailwind CSS, Framer Motion
+Software: VS Code, Git, Docker, Kubernetes
+
+/* PURPOSE */
+DevOps Engineering Services Portfolio
+Multi-cloud Infrastructure Expertise
+Kubernetes & Container Orchestration
+CI/CD Automation & DevSecOps
+Available for Global Remote Contracts
+
+Last update: 2025/01/10
