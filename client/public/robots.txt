@@ -21,8 +21,8 @@ Disallow:
 Crawl-delay: 1
 
 # Sitemap locations for comprehensive indexing
-Sitemap: https://vieerdwivedi.dev/sitemap.xml
-Sitemap: https://vieerdwivedi.dev/sitemap-index.xml
+Sitemap: https://devopsengineer.xyz/sitemap.xml
+Sitemap: https://devopsengineer.xyz/sitemap-index.xml
 
 # Additional indexing instructions
 User-agent: Googlebot

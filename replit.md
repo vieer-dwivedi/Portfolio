@@ -11,6 +11,7 @@ Preferred communication style: Simple, everyday language.
 - Target anyone searching for DevOps, SRE, Kubernetes, or freelancing
 - Aggressive keyword optimization for contractor discovery
 - Multiple landing pages for different search intents
+- Site domain: devopsengineer.xyz
 
 # System Architecture
 

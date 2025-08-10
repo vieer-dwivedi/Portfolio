@@ -7,7 +7,7 @@
       "name": "Vieer Dwivedi",
       "alternateName": ["Vieer", "DevOps Engineer Vieer", "Kubernetes Expert Vieer"],
       "description": "Expert DevOps Engineer with 5+ years experience in multi-cloud infrastructure (AWS, Azure, GCP), Kubernetes orchestration, and DevSecOps implementation. Available for global remote contracts and consulting.",
-      "url": "https://vieerdwivedi.dev",
+      "url": "https://devopsengineer.xyz",
       "image": {
         "@type": "ImageObject",
         "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
@@ -126,7 +126,7 @@
       "name": "DevOps Engineering Services",
       "description": "Professional DevOps, Kubernetes, and cloud infrastructure consulting services",
       "provider": {
-        "@id": "https://vieerdwivedi.dev#vieer-dwivedi"
+        "@id": "https://devopsengineer.xyz#vieer-dwivedi"
       },
       "serviceType": [
         "DevOps Consulting",
@@ -144,12 +144,12 @@
       "availableChannel": [
         {
           "@type": "ServiceChannel",
-          "serviceUrl": "https://vieerdwivedi.dev/devops-engineer-hire",
+          "serviceUrl": "https://devopsengineer.xyz/devops-engineer-hire",
           "serviceName": "DevOps Engineer Hire"
         },
         {
           "@type": "ServiceChannel", 
-          "serviceUrl": "https://vieerdwivedi.dev/kubernetes-consultant",
+          "serviceUrl": "https://devopsengineer.xyz/kubernetes-consultant",
           "serviceName": "Kubernetes Consultant"
         }
       ],
@@ -172,16 +172,16 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://vieerdwivedi.dev#website",
-      "url": "https://vieerdwivedi.dev",
+      "@id": "https://devopsengineer.xyz#website",
+      "url": "https://devopsengineer.xyz",
       "name": "Vieer Dwivedi - DevOps Engineer Portfolio",
       "description": "Professional portfolio showcasing DevOps engineering expertise, certifications, and availability for global remote contracts",
       "publisher": {
-        "@id": "https://vieerdwivedi.dev#vieer-dwivedi"
+        "@id": "https://devopsengineer.xyz#vieer-dwivedi"
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://vieerdwivedi.dev/sitemap",
+        "target": "https://devopsengineer.xyz/sitemap",
         "query-input": "required name=search_term_string"
       }
     }

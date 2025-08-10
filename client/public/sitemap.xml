@@ -7,7 +7,7 @@
 
   <!-- Main Portfolio Page -->
   <url>
-    <loc>https://vieerdwivedi.dev/</loc>
+    <loc>https://devopsengineer.xyz/</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -20,7 +20,7 @@
 
   <!-- About Section (anchor link) -->
   <url>
-    <loc>https://vieerdwivedi.dev/#about</loc>
+    <loc>https://devopsengineer.xyz/#about</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -28,7 +28,7 @@
 
   <!-- Skills Section (anchor link) -->
   <url>
-    <loc>https://vieerdwivedi.dev/#skills</loc>
+    <loc>https://devopsengineer.xyz/#skills</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -36,7 +36,7 @@
 
   <!-- Experience Section (anchor link) -->
   <url>
-    <loc>https://vieerdwivedi.dev/#experience</loc>
+    <loc>https://devopsengineer.xyz/#experience</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -44,7 +44,7 @@
 
   <!-- Certifications Section (anchor link) -->
   <url>
-    <loc>https://vieerdwivedi.dev/#certifications</loc>
+    <loc>https://devopsengineer.xyz/#certifications</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -52,7 +52,7 @@
 
   <!-- Projects Section (anchor link) -->
   <url>
-    <loc>https://vieerdwivedi.dev/#projects</loc>
+    <loc>https://devopsengineer.xyz/#projects</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -60,7 +60,7 @@
 
   <!-- Contact Section (anchor link) -->
   <url>
-    <loc>https://vieerdwivedi.dev/#contact</loc>
+    <loc>https://devopsengineer.xyz/#contact</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -68,56 +68,56 @@
 
   <!-- Service-specific landing pages for SEO -->
   <url>
-    <loc>https://vieerdwivedi.dev/devops-engineer-hire</loc>
+    <loc>https://devopsengineer.xyz/devops-engineer-hire</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://vieerdwivedi.dev/kubernetes-consultant</loc>
+    <loc>https://devopsengineer.xyz/kubernetes-consultant</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://vieerdwivedi.dev/aws-devops-expert</loc>
+    <loc>https://devopsengineer.xyz/aws-devops-expert</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://vieerdwivedi.dev/azure-cloud-architect</loc>
+    <loc>https://devopsengineer.xyz/azure-cloud-architect</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://vieerdwivedi.dev/gcp-infrastructure-specialist</loc>
+    <loc>https://devopsengineer.xyz/gcp-infrastructure-specialist</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://vieerdwivedi.dev/sre-engineer</loc>
+    <loc>https://devopsengineer.xyz/sre-engineer</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://vieerdwivedi.dev/devsecops-consultant</loc>
+    <loc>https://devopsengineer.xyz/devsecops-consultant</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://vieerdwivedi.dev/ci-cd-automation-expert</loc>
+    <loc>https://devopsengineer.xyz/ci-cd-automation-expert</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -125,7 +125,7 @@
 
   <!-- SEO Landing Pages -->
   <url>
-    <loc>https://vieerdwivedi.dev/freelance-devops-engineer.html</loc>
+    <loc>https://devopsengineer.xyz/freelance-devops-engineer.html</loc>
     <lastmod>2025-01-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
